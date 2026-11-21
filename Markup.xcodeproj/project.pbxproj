@@ -19,7 +19,6 @@
 		19356482DE9E929239EBC077 /* shapeArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6AB7DA3826F8D89D03800C /* shapeArrow.png */; };
 		19359A5FDC1A503C9BF4D052 /* shapeRectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4173DB65C04A2794FF104F /* shapeRectangle.png */; };
 		199A559C780DEEEBBB5EDC39 /* ExtensionTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05554249AEE46C4FE8986BC3 /* ExtensionTransport.swift */; };
-		1B61E80651746A981C5D0301 /* Markup.icns in Resources */ = {isa = PBXBuildFile; fileRef = 71400EEEA1EBBF57B509FCD0 /* Markup.icns */; };
 		1D4A06D4C6BF5BA6AE5016BD /* ToolPen.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E024A9A8193413125D87C1 /* ToolPen.png */; };
 		1D4D2A1210E8DEF228FB7D2B /* TelegramMarkerTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5148E9F1D0D491E339B0FE /* TelegramMarkerTool.swift */; };
 		1D5C27D9AD9A585D2C27D211 /* TelegramGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4190D342AB2FE9F5F22CBEEC /* TelegramGeometry.swift */; };
@@ -40,7 +39,6 @@
 		2ACD878AB460CA66C88DABFF /* ToolNeonTip.png in Resources */ = {isa = PBXBuildFile; fileRef = 07062EBFBDDCCC389908F9CC /* ToolNeonTip.png */; };
 		2DCC8804C5F3CF139ABC76BA /* TelegramDrawingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231D1A7284F5FA1C8B12AF3 /* TelegramDrawingState.swift */; };
 		2E3F382237858030D395F287 /* DrawingEntitySnapTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B543D8F8F09E54431A2A82EA /* DrawingEntitySnapTool.swift */; };
-		2FB12AF5AC7DCBD479D7829E /* Markup.icns in Resources */ = {isa = PBXBuildFile; fileRef = 71400EEEA1EBBF57B509FCD0 /* Markup.icns */; };
 		36E998151E24D39E4DAB96BA /* MarkupPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB668E9CC436AAF643F6588 /* MarkupPreferences.swift */; };
 		38AC74FCF92D3BE0C130E91A /* ToolArrowTip.png in Resources */ = {isa = PBXBuildFile; fileRef = 03FC62D84229B15E1CDD34A7 /* ToolArrowTip.png */; };
 		3BBA703A08914B419608E37F /* TelegramMarkerRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C16D744D6ED4EC3F3F2558 /* TelegramMarkerRenderer.swift */; };
@@ -71,6 +69,7 @@
 		612A3FDAED24131801F799F3 /* TextStroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 745850832A0EBF581B6230A2 /* TextStroke.png */; };
 		6177F0458E21AB827DD77C7A /* SettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA159E83A02754101967EE /* SettingsTests.swift */; };
 		6296B9A8260BA96D74D0512A /* ToolMarkerShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CEADC58079912B5AF91F038 /* ToolMarkerShadow.png */; };
+		631814F0D947DF656D6F8A0C /* Markup.icon in Resources */ = {isa = PBXBuildFile; fileRef = 87587081A5890115214F0B2D /* Markup.icon */; };
 		644365298DA644412EE69275 /* shapeStroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B8A793F1AE48B23246DBC /* shapeStroke.png */; };
 		65E920FE56C513201F87AE20 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7334BF6BFA833AAF67037D6 /* SettingsWindowController.swift */; };
 		67655389406FB6FC5A53EBD5 /* MarkupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB6C75C86270AEB1B1455C /* MarkupTests.swift */; };
@@ -257,7 +256,6 @@
 		6551B0ED4502430339C41C57 /* ToolArrowShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolArrowShadow.png; sourceTree = "<group>"; };
 		6690830CE19FA9C77D252EB4 /* shapeEllipse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shapeEllipse.png; sourceTree = "<group>"; };
 		6EBECAA84FE72A924B07A3BB /* ToolEraserShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolEraserShadow.png; sourceTree = "<group>"; };
-		71400EEEA1EBBF57B509FCD0 /* Markup.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Markup.icns; sourceTree = "<group>"; };
 		7304BAF21D0FC08F887A63FC /* ImageDropTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDropTests.swift; sourceTree = "<group>"; };
 		73844E9126C333561F6F61BF /* TelegramSizeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramSizeSlider.swift; sourceTree = "<group>"; };
 		745850832A0EBF581B6230A2 /* TextStroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextStroke.png; sourceTree = "<group>"; };
@@ -271,6 +269,7 @@
 		81D0088132D6061FC0F90E4C /* MarkupDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupDocument.swift; sourceTree = "<group>"; };
 		82B603C3EA9846237841C598 /* MarkupWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupWindow.swift; sourceTree = "<group>"; };
 		8351651232032DE9F04F78D6 /* MarkupAction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MarkupAction.entitlements; sourceTree = "<group>"; };
+		87587081A5890115214F0B2D /* Markup.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = Markup.icon; sourceTree = "<group>"; };
 		8C0066FE18E0A6F5B92051A9 /* ToolArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolArrow.png; sourceTree = "<group>"; };
 		9899F3BE9DC5A05AA59CD1FC /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		9EC9D227E128EF99A55B4A2C /* TextSemi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextSemi.png; sourceTree = "<group>"; };
@@ -322,7 +321,6 @@
 				CDFAB014CFF0BD39936661BC /* grayscale.png */,
 				9899F3BE9DC5A05AA59CD1FC /* LICENSE.txt */,
 				262086A078CBAD6CE054B41A /* marker.png */,
-				71400EEEA1EBBF57B509FCD0 /* Markup.icns */,
 				80A802E0FBEB04619B67DDC3 /* NOTICE.txt */,
 				573DC64C81C46F640A25DD06 /* roundSpectrum.png */,
 				2E6AB7DA3826F8D89D03800C /* shapeArrow.png */,
@@ -402,6 +400,7 @@
 				288701860FB1239C43CCE3F1 /* ImageDrop.swift */,
 				E01A63DA091B519463CC64AD /* ImageEditHistory.swift */,
 				2B461CE7B5043257EFB9971E /* Info.plist */,
+				87587081A5890115214F0B2D /* Markup.icon */,
 				81D0088132D6061FC0F90E4C /* MarkupDocument.swift */,
 				82B603C3EA9846237841C598 /* MarkupWindow.swift */,
 				FB9360D9B527B6C59E30C43B /* ScreenshotDrop.swift */,
@@ -632,7 +631,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ED0CFFF5FD7F9E8B78E9172 /* LICENSE.txt in Resources */,
-				2FB12AF5AC7DCBD479D7829E /* Markup.icns in Resources */,
 				EB9BA83EF52D199AFE973CEE /* NOTICE.txt in Resources */,
 				2086710BF0512C6396939334 /* TextDefault.png in Resources */,
 				7A4FC6C7AF6C552FF8D2B5E4 /* TextFilled.png in Resources */,
@@ -675,7 +673,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2DBF5C94CE85D0FFF0DA4BC /* LICENSE.txt in Resources */,
-				1B61E80651746A981C5D0301 /* Markup.icns in Resources */,
+				631814F0D947DF656D6F8A0C /* Markup.icon in Resources */,
 				3EC98D52BE880ECF88F828D8 /* NOTICE.txt in Resources */,
 				B5044A26EFC0E4DCC6C84852 /* TextDefault.png in Resources */,
 				27B92191128258E84F931386 /* TextFilled.png in Resources */,
@@ -901,7 +899,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -915,7 +913,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				MARKUP_APP_ID = dev.nikstar.Markup;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -930,7 +928,7 @@
 		088024010A33F130A87D129A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Markup;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_APP_SANDBOX = NO;
 				INFOPLIST_FILE = App/Info.plist;
@@ -1018,7 +1016,7 @@
 		62E9552EB831DD815A219A2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Markup;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_APP_SANDBOX = NO;
 				INFOPLIST_FILE = App/Info.plist;
@@ -1086,7 +1084,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1106,7 +1104,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				MARKUP_APP_ID = dev.nikstar.Markup;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;

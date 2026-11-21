@@ -1,0 +1,203 @@
+{
+  "fill": {
+    "automatic-gradient": "display-p3:0.09412,0.09412,0.16078,1.00000"
+  },
+  "fill-specializations": [
+    {
+      "appearance": "dark",
+      "value": {
+        "automatic-gradient": "display-p3:0.09412,0.09412,0.14118,1.00000"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "Felt and ink band",
+      "layers": [
+        {
+          "name": "Felt cut",
+          "image-name": "felt-cut.svg",
+          "glass": false,
+          "fill-specializations": [
+            {
+              "appearance": "tinted",
+              "value": {
+                "solid": "display-p3:1.00000,1.00000,1.00000,1.00000"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Ink tip",
+          "image-name": "ink-tip.svg",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "appearance": "tinted",
+              "value": {
+                "solid": "display-p3:0.95294,0.95294,0.95294,1.00000"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Ink band",
+          "image-name": "ink-band.svg",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "appearance": "tinted",
+              "value": {
+                "solid": "display-p3:0.98039,0.98039,0.98039,1.00000"
+              }
+            }
+          ]
+        }
+      ],
+      "lighting": "individual",
+      "specular": "outside",
+      "translucency": {
+        "enabled": true,
+        "value": 0.09
+      },
+      "blur-material": 0,
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.1
+      }
+    },
+    {
+      "name": "Glass grip",
+      "layers": [
+        {
+          "name": "Right facet",
+          "image-name": "right-facet.svg",
+          "glass": false,
+          "fill-specializations": [
+            {
+              "appearance": "tinted",
+              "value": {
+                "solid": "display-p3:0.67059,0.67059,0.67059,1.00000"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Grip",
+          "image-name": "grip.svg",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "appearance": "tinted",
+              "value": {
+                "solid": "display-p3:0.81569,0.81569,0.81569,1.00000"
+              }
+            }
+          ]
+        }
+      ],
+      "lighting": "combined",
+      "specular": "inside",
+      "refractivity": {
+        "enabled": true,
+        "strength": 0.15,
+        "depth": 0.72
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.17
+      },
+      "blur-material": 0,
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.08
+      }
+    },
+    {
+      "name": "Return stroke",
+      "layers": [
+        {
+          "name": "Returning ink",
+          "image-name": "return.svg",
+          "glass": true,
+          "opacity": 0.97,
+          "fill-specializations": [
+            {
+              "appearance": "tinted",
+              "value": {
+                "solid": "display-p3:0.93333,0.93333,0.93333,1.00000"
+              }
+            }
+          ]
+        }
+      ],
+      "specular": "outside",
+      "refractivity": {
+        "enabled": true,
+        "depth": 0.5,
+        "strength": 0.48
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.12
+      },
+      "blur-material": 0,
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.22
+      }
+    },
+    {
+      "name": "Ink stroke and barrel",
+      "layers": [
+        {
+          "name": "Brush",
+          "image-name": "brush.svg",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "appearance": "tinted",
+              "value": {
+                "solid": "display-p3:0.60392,0.60392,0.60392,1.00000"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Ink circle",
+          "image-name": "ink-circle.svg",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "appearance": "tinted",
+              "value": {
+                "solid": "display-p3:0.93333,0.93333,0.93333,1.00000"
+              }
+            }
+          ]
+        }
+      ],
+      "lighting": "individual",
+      "specular": "inside",
+      "refractivity": {
+        "enabled": true,
+        "strength": 0.66,
+        "depth": 0.71
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.11
+      },
+      "blur-material": 0,
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.3
+      }
+    }
+  ],
+  "supported-platforms": {
+    "squares": [
+      "macOS"
+    ]
+  }
+}

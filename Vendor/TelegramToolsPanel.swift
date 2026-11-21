@@ -98,7 +98,8 @@ private final class TelegramToolView: NSView {
 
     init(type: DrawingToolState.Key) {
         self.type = type
-        let name = MarkupTool(type).title
+        let tool = MarkupTool(type)
+        let name = tool.title
         func asset(_ suffix: String) -> NSImage? {
             Bundle.main.url(forResource: "Tool" + name + suffix, withExtension: "png").flatMap(NSImage.init(contentsOf:))
         }
@@ -130,8 +131,8 @@ private final class TelegramToolView: NSView {
         setAccessibilityElement(true)
         setAccessibilityRole(.button)
         setAccessibilityLabel(name)
-        setAccessibilityIdentifier("tool_" + MarkupTool(type).rawValue)
-        toolTip = name + " · drag the selected brush vertically to resize"
+        setAccessibilityIdentifier("tool_" + tool.rawValue)
+        toolTip = tool.shortcut.map { "\(name) (\($0.uppercased()))" } ?? name
     }
     required init?(coder: NSCoder) { fatalError() }
 

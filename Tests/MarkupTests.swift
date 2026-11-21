@@ -390,7 +390,11 @@ final class MarkupTests: XCTestCase {
     for name in ["ToolPen", "ToolArrow", "ToolMarker", "ToolNeon", "ToolBlur", "ToolEraser"] {
       XCTAssertNotNil(Bundle.main.url(forResource: name, withExtension: "png"), name)
     }
-    XCTAssertNotNil(Bundle.main.url(forResource: "Markup", withExtension: "icns"))
+  }
+
+  func testPrimaryIconIsCompiledIntoTheAssetCatalog() {
+    XCTAssertEqual(Bundle.main.object(forInfoDictionaryKey: "CFBundleIconName") as? String, "Markup")
+    XCTAssertNotNil(Bundle.main.url(forResource: "Assets", withExtension: "car"))
   }
 
 }

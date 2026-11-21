@@ -231,6 +231,7 @@ final class PreviewWindowTests: XCTestCase {
     }
     let tools = try XCTUnwrap(panel(in: vc.view))
     let slots = tools.subviews
+    XCTAssertEqual(slots.map(\.toolTip), ["Pen (P)", "Arrow (A)", "Marker (M)", "Neon (N)", "Blur (B)", "Eraser (E)"])
     let original = slots.map(\.frame)
     let marker = slots[2]
     let art = try XCTUnwrap(marker.layer?.sublayers?.first)

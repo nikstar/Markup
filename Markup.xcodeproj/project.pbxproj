@@ -1,0 +1,1191 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F1494EE246BDC3C9C1F131 /* ToolMarker.png in Resources */ = {isa = PBXBuildFile; fileRef = 419318A352BB79E08CE265B4 /* ToolMarker.png */; };
+		02C3717AFA35B4022BE96ED7 /* TextSemi.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EC9D227E128EF99A55B4A2C /* TextSemi.png */; };
+		0C7C230B0BCFBB40BF9D918A /* TelegramSizeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73844E9126C333561F6F61BF /* TelegramSizeSlider.swift */; };
+		0DA825ACEC4AB73BC72B744C /* TelegramTextSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B11F62D3C9AC528213209B /* TelegramTextSettings.swift */; };
+		0E71666DA8A0D9F6C3402B36 /* EyedropperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F6F9D13ADBEF5A8FF54838 /* EyedropperView.swift */; };
+		161F5E25751A77B84C4477D9 /* ToolEraserShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EBECAA84FE72A924B07A3BB /* ToolEraserShadow.png */; };
+		16E0E5B6057010B3C10F0AC0 /* ImageCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD0A5AF49A84C2DEFDCCC94 /* ImageCodec.swift */; };
+		1713673F92AB0FEA8C752070 /* TelegramEntitySelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521EE207823C02A73D78A4DE /* TelegramEntitySelection.swift */; };
+		17E141D169F02D6BD8ED34A7 /* grayscale.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFAB014CFF0BD39936661BC /* grayscale.png */; };
+		19356482DE9E929239EBC077 /* shapeArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6AB7DA3826F8D89D03800C /* shapeArrow.png */; };
+		19359A5FDC1A503C9BF4D052 /* shapeRectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4173DB65C04A2794FF104F /* shapeRectangle.png */; };
+		199A559C780DEEEBBB5EDC39 /* ExtensionTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05554249AEE46C4FE8986BC3 /* ExtensionTransport.swift */; };
+		1B61E80651746A981C5D0301 /* Markup.icns in Resources */ = {isa = PBXBuildFile; fileRef = 71400EEEA1EBBF57B509FCD0 /* Markup.icns */; };
+		1D4A06D4C6BF5BA6AE5016BD /* ToolPen.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E024A9A8193413125D87C1 /* ToolPen.png */; };
+		1D4D2A1210E8DEF228FB7D2B /* TelegramMarkerTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5148E9F1D0D491E339B0FE /* TelegramMarkerTool.swift */; };
+		1D5C27D9AD9A585D2C27D211 /* TelegramGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4190D342AB2FE9F5F22CBEEC /* TelegramGeometry.swift */; };
+		2055615F5E86E6834EAC19D2 /* SampleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8B0EBB85509E6B2C7A77FC /* SampleImage.swift */; };
+		2086710BF0512C6396939334 /* TextDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = EF607B445426D42ED734C4F3 /* TextDefault.png */; };
+		209DA553E2C4801476D695DB /* TelegramPenTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC7A019C99E5D5356FC767 /* TelegramPenTool.swift */; };
+		21C73543099975F19DAEBADC /* spectrum.png in Resources */ = {isa = PBXBuildFile; fileRef = D0F8AD1CDD3293CC6DABED9F /* spectrum.png */; };
+		242EBF661FC90A1755613216 /* TelegramShapeGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4D5B65423CB6E107FAE91 /* TelegramShapeGeometry.swift */; };
+		24AED52CB93BFE175696C12F /* EyedropperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F6F9D13ADBEF5A8FF54838 /* EyedropperView.swift */; };
+		255C5EF77CB1BBE7C4D0207E /* ImageDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288701860FB1239C43CCE3F1 /* ImageDrop.swift */; };
+		256C9119A483634490AB687E /* TelegramMarkerTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5148E9F1D0D491E339B0FE /* TelegramMarkerTool.swift */; };
+		264C0EFF2180CA9A5AFC0A92 /* TelegramDrawingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231D1A7284F5FA1C8B12AF3 /* TelegramDrawingState.swift */; };
+		264E8633432E4426CE524D9A /* MarkupPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB668E9CC436AAF643F6588 /* MarkupPreferences.swift */; };
+		26B7C382B906AA5887C40859 /* TelegramShapeGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4D5B65423CB6E107FAE91 /* TelegramShapeGeometry.swift */; };
+		27B92191128258E84F931386 /* TextFilled.png in Resources */ = {isa = PBXBuildFile; fileRef = E389004FA23CB5C35CB8750D /* TextFilled.png */; };
+		29E8B47B7C2F48000951E492 /* TelegramToolsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DCE2A5F212F07E71173680 /* TelegramToolsPanel.swift */; };
+		2ACC51F5DA18047B6216631C /* ToolBlur.png in Resources */ = {isa = PBXBuildFile; fileRef = FA63619CD043FEB81CA2A442 /* ToolBlur.png */; };
+		2ACD878AB460CA66C88DABFF /* ToolNeonTip.png in Resources */ = {isa = PBXBuildFile; fileRef = 07062EBFBDDCCC389908F9CC /* ToolNeonTip.png */; };
+		2DCC8804C5F3CF139ABC76BA /* TelegramDrawingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231D1A7284F5FA1C8B12AF3 /* TelegramDrawingState.swift */; };
+		2E3F382237858030D395F287 /* DrawingEntitySnapTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B543D8F8F09E54431A2A82EA /* DrawingEntitySnapTool.swift */; };
+		2FB12AF5AC7DCBD479D7829E /* Markup.icns in Resources */ = {isa = PBXBuildFile; fileRef = 71400EEEA1EBBF57B509FCD0 /* Markup.icns */; };
+		36E998151E24D39E4DAB96BA /* MarkupPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB668E9CC436AAF643F6588 /* MarkupPreferences.swift */; };
+		38AC74FCF92D3BE0C130E91A /* ToolArrowTip.png in Resources */ = {isa = PBXBuildFile; fileRef = 03FC62D84229B15E1CDD34A7 /* ToolArrowTip.png */; };
+		3BBA703A08914B419608E37F /* TelegramMarkerRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C16D744D6ED4EC3F3F2558 /* TelegramMarkerRenderer.swift */; };
+		3C76DB9AECBB091457999269 /* ToolPenShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = D51122DE20A400B5B5CA129A /* ToolPenShadow.png */; };
+		3E8220D2A17F415AA15358CF /* InlineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557463687E436867B7E1F8FF /* InlineTextView.swift */; };
+		3EC98D52BE880ECF88F828D8 /* NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 80A802E0FBEB04619B67DDC3 /* NOTICE.txt */; };
+		3FE94F07BB8B2E1365A4EC6B /* shapeStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 21E788AB995BDE1479B041F3 /* shapeStar.png */; };
+		41861F53B0FF5D7035F602D4 /* ToolBlurShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = AA04DAA440837AA730581AAA /* ToolBlurShadow.png */; };
+		42DBF41478225BF0993EEE51 /* ImageDropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304BAF21D0FC08F887A63FC /* ImageDropTests.swift */; };
+		44E8D6DBD02141E9F9015AF8 /* MarkupWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B603C3EA9846237841C598 /* MarkupWindow.swift */; };
+		4543AB3B1F53AB3E85CF325E /* ToolPenTip.png in Resources */ = {isa = PBXBuildFile; fileRef = F5922E887620753D0C3944E1 /* ToolPenTip.png */; };
+		467E808EE346F49923F98350 /* shapeFill.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF576D93661CA8CDA670C16 /* shapeFill.png */; };
+		4747F1C7CD0D6C0A20E6C1D9 /* TextStroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 745850832A0EBF581B6230A2 /* TextStroke.png */; };
+		47CBD9E297AABEAE716E43BB /* TelegramGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4190D342AB2FE9F5F22CBEEC /* TelegramGeometry.swift */; };
+		4851AA60DA6A1C3064D562EA /* ToolPenShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = D51122DE20A400B5B5CA129A /* ToolPenShadow.png */; };
+		4A8CB16285A2B6CB3045341A /* CanvasToolbarBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFD6E42055AF282C2C3D51E /* CanvasToolbarBlur.swift */; };
+		4ACE4124842B9AC953DC8A64 /* ToolNeon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F271E75211B016C7B7EECF0 /* ToolNeon.png */; };
+		4D0308A5059B6F3CF6DDF4C3 /* SampleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8B0EBB85509E6B2C7A77FC /* SampleImage.swift */; };
+		4D0682DA1DC4420C5F16BD94 /* Drawing.metal in Sources */ = {isa = PBXBuildFile; fileRef = 239F3F4FF9946C1078CA4C03 /* Drawing.metal */; };
+		4EEAB8B2592EA101E0666910 /* TelegramTextLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FB87CD669299755A56413 /* TelegramTextLayoutManager.swift */; };
+		4F1E929AB5554C7BEEF27D13 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DAD382FCDCDD22C06ED15 /* Renderer.swift */; };
+		501CA4F8244F0FBDBA812F26 /* ToolArrowTip.png in Resources */ = {isa = PBXBuildFile; fileRef = 03FC62D84229B15E1CDD34A7 /* ToolArrowTip.png */; };
+		53B2C6CE3F4FB5231F9A0EC5 /* ToolBlur.png in Resources */ = {isa = PBXBuildFile; fileRef = FA63619CD043FEB81CA2A442 /* ToolBlur.png */; };
+		57C4815BB785CB4F5C22EA2B /* MarkupAction.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 764F5EA658525ED0E0ED3E7F /* MarkupAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5AF40409D088081CF7BA1685 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EE6B1C679D9FD4E5B3EABD /* EditorViewController.swift */; };
+		5CEFE4C380F44C28EBC73157 /* ToolNeon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F271E75211B016C7B7EECF0 /* ToolNeon.png */; };
+		60055A71A20ED0CF3BE2D425 /* PreviewSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688DE85280FE6AF94F34016 /* PreviewSurface.swift */; };
+		612A3FDAED24131801F799F3 /* TextStroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 745850832A0EBF581B6230A2 /* TextStroke.png */; };
+		6177F0458E21AB827DD77C7A /* SettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA159E83A02754101967EE /* SettingsTests.swift */; };
+		6296B9A8260BA96D74D0512A /* ToolMarkerShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CEADC58079912B5AF91F038 /* ToolMarkerShadow.png */; };
+		644365298DA644412EE69275 /* shapeStroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B8A793F1AE48B23246DBC /* shapeStroke.png */; };
+		65E920FE56C513201F87AE20 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7334BF6BFA833AAF67037D6 /* SettingsWindowController.swift */; };
+		67655389406FB6FC5A53EBD5 /* MarkupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB6C75C86270AEB1B1455C /* MarkupTests.swift */; };
+		69825209544613A746C50C1A /* TelegramVectorGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C534189E85CD6237DA2254C /* TelegramVectorGeometry.swift */; };
+		6ADCEDD3A6F405D36BD614D4 /* roundSpectrum.png in Resources */ = {isa = PBXBuildFile; fileRef = 573DC64C81C46F640A25DD06 /* roundSpectrum.png */; };
+		6B0091310AE46494D71C3F13 /* PreviewSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688DE85280FE6AF94F34016 /* PreviewSurface.swift */; };
+		6F72BC1E2A81B7E979234FAE /* Drawing.metal in Sources */ = {isa = PBXBuildFile; fileRef = 239F3F4FF9946C1078CA4C03 /* Drawing.metal */; };
+		6F910D2D5E2BDE44E08EC18C /* TelegramVectorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0E823D9F1875DC87836F3 /* TelegramVectorEntity.swift */; };
+		728B4E3881F664586881DB40 /* TelegramNeonTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B84835AAB95B154406107B /* TelegramNeonTool.swift */; };
+		739F0D411FB50BAABD858212 /* ToolEraser.png in Resources */ = {isa = PBXBuildFile; fileRef = 51821EB035F07C13D1BF33F6 /* ToolEraser.png */; };
+		7513F131F61194AC98EED169 /* TextSemi.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EC9D227E128EF99A55B4A2C /* TextSemi.png */; };
+		7696ABED826C3612D1CEFA78 /* marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 262086A078CBAD6CE054B41A /* marker.png */; };
+		78A0E9219B7BE060972C71B6 /* ios-regular.png in Resources */ = {isa = PBXBuildFile; fileRef = A04DAE2C3CA50ABBD59C879C /* ios-regular.png */; };
+		796346412B995BC035195A8B /* TelegramTextLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1C5DBDC638A198832146EC /* TelegramTextLayout.swift */; };
+		797830CFE326424A8D621718 /* shapeBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB4778E8F72688137EFB44A /* shapeBubble.png */; };
+		7A4FC6C7AF6C552FF8D2B5E4 /* TextFilled.png in Resources */ = {isa = PBXBuildFile; fileRef = E389004FA23CB5C35CB8750D /* TextFilled.png */; };
+		7CA11511157888555B079512 /* TelegramStrokeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE524D70E000E56F2810968 /* TelegramStrokeInput.swift */; };
+		7CD32AE9AD317C86624B014B /* roundSpectrum.png in Resources */ = {isa = PBXBuildFile; fileRef = 573DC64C81C46F640A25DD06 /* roundSpectrum.png */; };
+		7ED0CFFF5FD7F9E8B78E9172 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9899F3BE9DC5A05AA59CD1FC /* LICENSE.txt */; };
+		82A6C2B90FEA3C97D273CDB0 /* ToolArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C0066FE18E0A6F5B92051A9 /* ToolArrow.png */; };
+		83B0F49DE1F70A9CB59494A7 /* TelegramTextLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FB87CD669299755A56413 /* TelegramTextLayoutManager.swift */; };
+		854B38EB8382B0703737BA07 /* ios-stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = BADBEE727478680EC96DE4AE /* ios-stroke.png */; };
+		86788E3324E9EF163814AF96 /* shapeStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 21E788AB995BDE1479B041F3 /* shapeStar.png */; };
+		87255A8C995582368F793873 /* shapeArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6AB7DA3826F8D89D03800C /* shapeArrow.png */; };
+		87ACC4071B280B8043EF2165 /* TelegramPenTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC7A019C99E5D5356FC767 /* TelegramPenTool.swift */; };
+		87DCCEDB01018E0167B09919 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EE6B1C679D9FD4E5B3EABD /* EditorViewController.swift */; };
+		886AFB4792A9D96F021FCF41 /* TelegramFastColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA5FC04E9A574AE36517921 /* TelegramFastColorButton.swift */; };
+		89BECB02200E7D83085EBB1F /* ImageCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD0A5AF49A84C2DEFDCCC94 /* ImageCodec.swift */; };
+		8F219B803A7A40472D2A78F7 /* TelegramEntitySelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521EE207823C02A73D78A4DE /* TelegramEntitySelection.swift */; };
+		91310CAAC0BF7FD628094BE0 /* TelegramNeonTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B84835AAB95B154406107B /* TelegramNeonTool.swift */; };
+		94AD3EB3DDECFE4808CFC40C /* ios-semi.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BB54A92D77211970ED93FE /* ios-semi.png */; };
+		957410396399DCE4DD12BAA7 /* ImageEditHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01A63DA091B519463CC64AD /* ImageEditHistory.swift */; };
+		980ACC5D69A25A8DCAE1C8E6 /* ToolNeonShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = B4AE97C1C105F2502DACDA69 /* ToolNeonShadow.png */; };
+		99F1EB66F61D7131FF99DC63 /* TelegramMetalTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CE5EEF707A2D4D5D24305 /* TelegramMetalTypes.swift */; };
+		9A32DA4BF737D15F7FBC1D61 /* ToolBlurTip.png in Resources */ = {isa = PBXBuildFile; fileRef = D1D3EBEF03469287F1AE394A /* ToolBlurTip.png */; };
+		9B903276DEE6D09A8263E5A2 /* ToolMarkerTip.png in Resources */ = {isa = PBXBuildFile; fileRef = 3858738B90E8EA9BF3D219E9 /* ToolMarkerTip.png */; };
+		9CA72301FCB7DBB9AC18876F /* ToolArrowShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6551B0ED4502430339C41C57 /* ToolArrowShadow.png */; };
+		9D0BA833F362B9D3DEE5A49E /* TelegramMetalTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CE5EEF707A2D4D5D24305 /* TelegramMetalTypes.swift */; };
+		9F2209AB8ECA756E445A3D31 /* StrokeLifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F54F48CB22C65F913DE78C /* StrokeLifecycleTests.swift */; };
+		A03A93AF11F660D02ABED4AF /* ToolBlurTip.png in Resources */ = {isa = PBXBuildFile; fileRef = D1D3EBEF03469287F1AE394A /* ToolBlurTip.png */; };
+		A0A6FF2EE6D6CE87FC2FA843 /* spectrum.png in Resources */ = {isa = PBXBuildFile; fileRef = D0F8AD1CDD3293CC6DABED9F /* spectrum.png */; };
+		A1A872CB18AEBF17C5E53ED7 /* ToolEraser.png in Resources */ = {isa = PBXBuildFile; fileRef = 51821EB035F07C13D1BF33F6 /* ToolEraser.png */; };
+		A21041DA9A8F74D8C327E25B /* ToolMarker.png in Resources */ = {isa = PBXBuildFile; fileRef = 419318A352BB79E08CE265B4 /* ToolMarker.png */; };
+		A483B66AF36E4FB42E358BD7 /* MarkupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C268975837FB86654EC230 /* MarkupModel.swift */; };
+		AC7737D7A392280231778D69 /* ToolPen.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E024A9A8193413125D87C1 /* ToolPen.png */; };
+		AFB476A68F836C68CB51200C /* TelegramVectorGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C534189E85CD6237DA2254C /* TelegramVectorGeometry.swift */; };
+		B48A21AE663AB9E6573C96A6 /* TelegramColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A426C2BC2A1DB260ED6A53BE /* TelegramColorPicker.swift */; };
+		B5044A26EFC0E4DCC6C84852 /* TextDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = EF607B445426D42ED734C4F3 /* TextDefault.png */; };
+		B5B46D3A6BA28DBE165FFCD1 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E82733DDA35EE4A94CC7FF /* CanvasView.swift */; };
+		B6D6DC214547FCB6D51F6CD5 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E82733DDA35EE4A94CC7FF /* CanvasView.swift */; };
+		B91CA4C794D285ED65B0CC2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391B84CFE83B7378154CC0C /* AppDelegate.swift */; };
+		B983EFE9125037F80B202DB2 /* TelegramPortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0279E8CDB45A28BDA4A930F /* TelegramPortTests.swift */; };
+		BA16BA2F4307C09C3D0186A5 /* marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 262086A078CBAD6CE054B41A /* marker.png */; };
+		BA6718AD3D4428791868E0A8 /* ToolBlurShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = AA04DAA440837AA730581AAA /* ToolBlurShadow.png */; };
+		BAF970EC6AF20828D958B4E6 /* TelegramMarkerRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C16D744D6ED4EC3F3F2558 /* TelegramMarkerRenderer.swift */; };
+		BC82928F266ADC5E710711D2 /* shapeEllipse.png in Resources */ = {isa = PBXBuildFile; fileRef = 6690830CE19FA9C77D252EB4 /* shapeEllipse.png */; };
+		BEB6121676664121613E0ADE /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4593EA35A7F20A968CAF2190 /* ActionViewController.swift */; };
+		BFB48898BAD8A587EDCA56A0 /* InlineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557463687E436867B7E1F8FF /* InlineTextView.swift */; };
+		C029784C7CD24EA35EBD5101 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DAD382FCDCDD22C06ED15 /* Renderer.swift */; };
+		C02D8CCE6869E19EDC91A2FD /* TelegramPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CA2C8F696FB66E1CEA61FC /* TelegramPlatform.swift */; };
+		C1AE2D14FD22AD3BD0ECF672 /* DrawingEntitySnapTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B543D8F8F09E54431A2A82EA /* DrawingEntitySnapTool.swift */; };
+		C1EDA7C407920043106B08ED /* TelegramStrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E2BCF3D0C6D3481211CC /* TelegramStrokeRenderer.swift */; };
+		C37667B30537E33D7085C274 /* grayscale.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFAB014CFF0BD39936661BC /* grayscale.png */; };
+		C3E994EB6A7F1D62D665E32E /* TelegramStrokeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE524D70E000E56F2810968 /* TelegramStrokeInput.swift */; };
+		C5162D4DAB569A4F81E73854 /* TelegramColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A426C2BC2A1DB260ED6A53BE /* TelegramColorPicker.swift */; };
+		C523C034FF32857A5B2E8955 /* MarkupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C268975837FB86654EC230 /* MarkupModel.swift */; };
+		C59C91547AC274F40EB1EC27 /* shapeFlip.png in Resources */ = {isa = PBXBuildFile; fileRef = 810F958671EF3EBDFC3630E0 /* shapeFlip.png */; };
+		C6A579AB193F0CE5C3170585 /* TelegramFastColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA5FC04E9A574AE36517921 /* TelegramFastColorButton.swift */; };
+		CB8949972AA2B08370A20A47 /* TelegramTextSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B11F62D3C9AC528213209B /* TelegramTextSettings.swift */; };
+		CC2ACADA2555176EAC796AF9 /* ToolArrowShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6551B0ED4502430339C41C57 /* ToolArrowShadow.png */; };
+		D13530BEA1BC52FE09F0A7ED /* TelegramVectorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0E823D9F1875DC87836F3 /* TelegramVectorEntity.swift */; };
+		D2DBF5C94CE85D0FFF0DA4BC /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9899F3BE9DC5A05AA59CD1FC /* LICENSE.txt */; };
+		D385E9DD77EBB3036E1F8D50 /* ExtensionTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05554249AEE46C4FE8986BC3 /* ExtensionTransport.swift */; };
+		D40EF5C774B6497E2E7B33A9 /* MarkupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6249115D1005ACEC163067CB /* MarkupUITests.swift */; };
+		D523D8287B1DBB6F6A89D870 /* ScreenshotDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9360D9B527B6C59E30C43B /* ScreenshotDrop.swift */; };
+		DBC56E1A9E688D2D3BD3E73F /* QuickMarkupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0C26632C6F078520537FBB /* QuickMarkupTests.swift */; };
+		DD460B7AC38DFCEACB1282CB /* ToolNeonShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = B4AE97C1C105F2502DACDA69 /* ToolNeonShadow.png */; };
+		DF4D5040BB22B5314A9D3FF2 /* ToolNeonTip.png in Resources */ = {isa = PBXBuildFile; fileRef = 07062EBFBDDCCC389908F9CC /* ToolNeonTip.png */; };
+		E62564384E7FE19713C6B8B7 /* MarkupDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0088132D6061FC0F90E4C /* MarkupDocument.swift */; };
+		E673A2553495A9FDD9149E86 /* ToolMarkerShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CEADC58079912B5AF91F038 /* ToolMarkerShadow.png */; };
+		E6DB9196FAA249EAF732D29D /* ToolPenTip.png in Resources */ = {isa = PBXBuildFile; fileRef = F5922E887620753D0C3944E1 /* ToolPenTip.png */; };
+		E9612C9EA6B4BF1271683D52 /* AutosaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04320D3519FD6BF0ECD97B6 /* AutosaveTests.swift */; };
+		E9E1136D55A0BFEB9A04F642 /* shapeFlip.png in Resources */ = {isa = PBXBuildFile; fileRef = 810F958671EF3EBDFC3630E0 /* shapeFlip.png */; };
+		EB9BA83EF52D199AFE973CEE /* NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 80A802E0FBEB04619B67DDC3 /* NOTICE.txt */; };
+		EC091962869A42D614750AB8 /* shapeStroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B8A793F1AE48B23246DBC /* shapeStroke.png */; };
+		EE21FBA85056EEC24EE88250 /* InlineTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5379664FFE45211BC101A08 /* InlineTextTests.swift */; };
+		EE8BFCA166F06E500C85BD01 /* shapeFill.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF576D93661CA8CDA670C16 /* shapeFill.png */; };
+		EFAA713AA78AF3C0BED56103 /* ToolMarkerTip.png in Resources */ = {isa = PBXBuildFile; fileRef = 3858738B90E8EA9BF3D219E9 /* ToolMarkerTip.png */; };
+		F4297EF029B29CDD50F9A30F /* TelegramTextLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1C5DBDC638A198832146EC /* TelegramTextLayout.swift */; };
+		F521C095EADD144BE1C8F3AD /* TelegramStrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E2BCF3D0C6D3481211CC /* TelegramStrokeRenderer.swift */; };
+		F67FB2EA4424184B839209E1 /* ToolEraserShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EBECAA84FE72A924B07A3BB /* ToolEraserShadow.png */; };
+		F8DA9C57792D22288072650B /* ios-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = FF540993555A3BB9E5F71882 /* ios-filled.png */; };
+		F9C9076BE46B18339BC9666E /* TelegramPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CA2C8F696FB66E1CEA61FC /* TelegramPlatform.swift */; };
+		F9D292F3EB85A75FFAD68ABF /* shapeRectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4173DB65C04A2794FF104F /* shapeRectangle.png */; };
+		FA8281FF1B5D0181D6701171 /* ToolArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C0066FE18E0A6F5B92051A9 /* ToolArrow.png */; };
+		FC358259C9647B6B9E29216C /* PreviewWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD1BBC2083F2D722DF7EBD4 /* PreviewWindowTests.swift */; };
+		FD8DB63B5D72F92A340B1D34 /* TelegramSizeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73844E9126C333561F6F61BF /* TelegramSizeSlider.swift */; };
+		FDFAEA3D7030D3F04DA6D69F /* TelegramToolsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DCE2A5F212F07E71173680 /* TelegramToolsPanel.swift */; };
+		FE3C6E57478F5A2B8262C7E9 /* shapeEllipse.png in Resources */ = {isa = PBXBuildFile; fileRef = 6690830CE19FA9C77D252EB4 /* shapeEllipse.png */; };
+		FF5ACEACA4D9CAB62F51725D /* shapeBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB4778E8F72688137EFB44A /* shapeBubble.png */; };
+		FFEFB5DD8803AAC8D9AB109A /* CanvasToolbarBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFD6E42055AF282C2C3D51E /* CanvasToolbarBlur.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		376A1DC63FD1A56BBE84A727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0370A978D778096F5D9B5DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF1CFBB1AA84060EC1F99775;
+			remoteInfo = MarkupAction;
+		};
+		58A921AA4684ECEE352520CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0370A978D778096F5D9B5DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CCF062B55AF361D0C81FA5C;
+			remoteInfo = Markup;
+		};
+		BBC9ABD1C35BE607D5738F85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0370A978D778096F5D9B5DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CCF062B55AF361D0C81FA5C;
+			remoteInfo = Markup;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC1E652A07A16946ADED2B42 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				57C4815BB785CB4F5C22EA2B /* MarkupAction.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00E024A9A8193413125D87C1 /* ToolPen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolPen.png; sourceTree = "<group>"; };
+		0231D1A7284F5FA1C8B12AF3 /* TelegramDrawingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramDrawingState.swift; sourceTree = "<group>"; };
+		03FC62D84229B15E1CDD34A7 /* ToolArrowTip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolArrowTip.png; sourceTree = "<group>"; };
+		05554249AEE46C4FE8986BC3 /* ExtensionTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTransport.swift; sourceTree = "<group>"; };
+		064889BC4495B12120028929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		07062EBFBDDCCC389908F9CC /* ToolNeonTip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolNeonTip.png; sourceTree = "<group>"; };
+		09CA2C8F696FB66E1CEA61FC /* TelegramPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramPlatform.swift; sourceTree = "<group>"; };
+		0D4B8A793F1AE48B23246DBC /* shapeStroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shapeStroke.png; sourceTree = "<group>"; };
+		0EFA159E83A02754101967EE /* SettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTests.swift; sourceTree = "<group>"; };
+		0F8B0EBB85509E6B2C7A77FC /* SampleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleImage.swift; sourceTree = "<group>"; };
+		1BA8D9A938A2C7C4A8163E54 /* MarkupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E82733DDA35EE4A94CC7FF /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		21E788AB995BDE1479B041F3 /* shapeStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shapeStar.png; sourceTree = "<group>"; };
+		239F3F4FF9946C1078CA4C03 /* Drawing.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Drawing.metal; sourceTree = "<group>"; };
+		262086A078CBAD6CE054B41A /* marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marker.png; sourceTree = "<group>"; };
+		288701860FB1239C43CCE3F1 /* ImageDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDrop.swift; sourceTree = "<group>"; };
+		29F54F48CB22C65F913DE78C /* StrokeLifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeLifecycleTests.swift; sourceTree = "<group>"; };
+		2AA5FC04E9A574AE36517921 /* TelegramFastColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramFastColorButton.swift; sourceTree = "<group>"; };
+		2B461CE7B5043257EFB9971E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2D0C26632C6F078520537FBB /* QuickMarkupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMarkupTests.swift; sourceTree = "<group>"; };
+		2DD1BBC2083F2D722DF7EBD4 /* PreviewWindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewWindowTests.swift; sourceTree = "<group>"; };
+		2E6AB7DA3826F8D89D03800C /* shapeArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shapeArrow.png; sourceTree = "<group>"; };
+		2F271E75211B016C7B7EECF0 /* ToolNeon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolNeon.png; sourceTree = "<group>"; };
+		30DCE2A5F212F07E71173680 /* TelegramToolsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramToolsPanel.swift; sourceTree = "<group>"; };
+		33B11F62D3C9AC528213209B /* TelegramTextSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramTextSettings.swift; sourceTree = "<group>"; };
+		3858738B90E8EA9BF3D219E9 /* ToolMarkerTip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolMarkerTip.png; sourceTree = "<group>"; };
+		3AE524D70E000E56F2810968 /* TelegramStrokeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramStrokeInput.swift; sourceTree = "<group>"; };
+		3BBB6C75C86270AEB1B1455C /* MarkupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupTests.swift; sourceTree = "<group>"; };
+		4190D342AB2FE9F5F22CBEEC /* TelegramGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramGeometry.swift; sourceTree = "<group>"; };
+		419318A352BB79E08CE265B4 /* ToolMarker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolMarker.png; sourceTree = "<group>"; };
+		41C16D744D6ED4EC3F3F2558 /* TelegramMarkerRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramMarkerRenderer.swift; sourceTree = "<group>"; };
+		4593EA35A7F20A968CAF2190 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		49A0E823D9F1875DC87836F3 /* TelegramVectorEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramVectorEntity.swift; sourceTree = "<group>"; };
+		4C534189E85CD6237DA2254C /* TelegramVectorGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramVectorGeometry.swift; sourceTree = "<group>"; };
+		51821EB035F07C13D1BF33F6 /* ToolEraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolEraser.png; sourceTree = "<group>"; };
+		521EE207823C02A73D78A4DE /* TelegramEntitySelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramEntitySelection.swift; sourceTree = "<group>"; };
+		557463687E436867B7E1F8FF /* InlineTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineTextView.swift; sourceTree = "<group>"; };
+		573DC64C81C46F640A25DD06 /* roundSpectrum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roundSpectrum.png; sourceTree = "<group>"; };
+		5B5148E9F1D0D491E339B0FE /* TelegramMarkerTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramMarkerTool.swift; sourceTree = "<group>"; };
+		5CEADC58079912B5AF91F038 /* ToolMarkerShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolMarkerShadow.png; sourceTree = "<group>"; };
+		6249115D1005ACEC163067CB /* MarkupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupUITests.swift; sourceTree = "<group>"; };
+		6551B0ED4502430339C41C57 /* ToolArrowShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolArrowShadow.png; sourceTree = "<group>"; };
+		6690830CE19FA9C77D252EB4 /* shapeEllipse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shapeEllipse.png; sourceTree = "<group>"; };
+		6EBECAA84FE72A924B07A3BB /* ToolEraserShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolEraserShadow.png; sourceTree = "<group>"; };
+		71400EEEA1EBBF57B509FCD0 /* Markup.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Markup.icns; sourceTree = "<group>"; };
+		7304BAF21D0FC08F887A63FC /* ImageDropTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDropTests.swift; sourceTree = "<group>"; };
+		73844E9126C333561F6F61BF /* TelegramSizeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramSizeSlider.swift; sourceTree = "<group>"; };
+		745850832A0EBF581B6230A2 /* TextStroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextStroke.png; sourceTree = "<group>"; };
+		74EE6B1C679D9FD4E5B3EABD /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
+		764F5EA658525ED0E0ED3E7F /* MarkupAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MarkupAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7688DE85280FE6AF94F34016 /* PreviewSurface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSurface.swift; sourceTree = "<group>"; };
+		7E4DAD382FCDCDD22C06ED15 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		7F12F6E8C0DEC46DE098B5DE /* MarkupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A802E0FBEB04619B67DDC3 /* NOTICE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = NOTICE.txt; sourceTree = "<group>"; };
+		810F958671EF3EBDFC3630E0 /* shapeFlip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shapeFlip.png; sourceTree = "<group>"; };
+		81D0088132D6061FC0F90E4C /* MarkupDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupDocument.swift; sourceTree = "<group>"; };
+		82B603C3EA9846237841C598 /* MarkupWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupWindow.swift; sourceTree = "<group>"; };
+		8351651232032DE9F04F78D6 /* MarkupAction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MarkupAction.entitlements; sourceTree = "<group>"; };
+		8C0066FE18E0A6F5B92051A9 /* ToolArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolArrow.png; sourceTree = "<group>"; };
+		9899F3BE9DC5A05AA59CD1FC /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		9EC9D227E128EF99A55B4A2C /* TextSemi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextSemi.png; sourceTree = "<group>"; };
+		9FF576D93661CA8CDA670C16 /* shapeFill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shapeFill.png; sourceTree = "<group>"; };
+		A04320D3519FD6BF0ECD97B6 /* AutosaveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutosaveTests.swift; sourceTree = "<group>"; };
+		A04DAE2C3CA50ABBD59C879C /* ios-regular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-regular.png"; sourceTree = "<group>"; };
+		A426C2BC2A1DB260ED6A53BE /* TelegramColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramColorPicker.swift; sourceTree = "<group>"; };
+		A46FB87CD669299755A56413 /* TelegramTextLayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramTextLayoutManager.swift; sourceTree = "<group>"; };
+		A8F6E2BCF3D0C6D3481211CC /* TelegramStrokeRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramStrokeRenderer.swift; sourceTree = "<group>"; };
+		AA04DAA440837AA730581AAA /* ToolBlurShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolBlurShadow.png; sourceTree = "<group>"; };
+		B4AE97C1C105F2502DACDA69 /* ToolNeonShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolNeonShadow.png; sourceTree = "<group>"; };
+		B543D8F8F09E54431A2A82EA /* DrawingEntitySnapTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingEntitySnapTool.swift; sourceTree = "<group>"; };
+		BADBEE727478680EC96DE4AE /* ios-stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-stroke.png"; sourceTree = "<group>"; };
+		BEFD6E42055AF282C2C3D51E /* CanvasToolbarBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasToolbarBlur.swift; sourceTree = "<group>"; };
+		C24FF82D22AF628C8309760A /* Markup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Markup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C72CE5EEF707A2D4D5D24305 /* TelegramMetalTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramMetalTypes.swift; sourceTree = "<group>"; };
+		CAE4D5B65423CB6E107FAE91 /* TelegramShapeGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramShapeGeometry.swift; sourceTree = "<group>"; };
+		CDFAB014CFF0BD39936661BC /* grayscale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayscale.png; sourceTree = "<group>"; };
+		CEB668E9CC436AAF643F6588 /* MarkupPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupPreferences.swift; sourceTree = "<group>"; };
+		D0F8AD1CDD3293CC6DABED9F /* spectrum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spectrum.png; sourceTree = "<group>"; };
+		D1D3EBEF03469287F1AE394A /* ToolBlurTip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolBlurTip.png; sourceTree = "<group>"; };
+		D51122DE20A400B5B5CA129A /* ToolPenShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolPenShadow.png; sourceTree = "<group>"; };
+		D5BB54A92D77211970ED93FE /* ios-semi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-semi.png"; sourceTree = "<group>"; };
+		DBD0A5AF49A84C2DEFDCCC94 /* ImageCodec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCodec.swift; sourceTree = "<group>"; };
+		DC1C5DBDC638A198832146EC /* TelegramTextLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramTextLayout.swift; sourceTree = "<group>"; };
+		E01A63DA091B519463CC64AD /* ImageEditHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditHistory.swift; sourceTree = "<group>"; };
+		E0279E8CDB45A28BDA4A930F /* TelegramPortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramPortTests.swift; sourceTree = "<group>"; };
+		E389004FA23CB5C35CB8750D /* TextFilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextFilled.png; sourceTree = "<group>"; };
+		E5379664FFE45211BC101A08 /* InlineTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineTextTests.swift; sourceTree = "<group>"; };
+		E7334BF6BFA833AAF67037D6 /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		E7C268975837FB86654EC230 /* MarkupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupModel.swift; sourceTree = "<group>"; };
+		EC4173DB65C04A2794FF104F /* shapeRectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shapeRectangle.png; sourceTree = "<group>"; };
+		EF607B445426D42ED734C4F3 /* TextDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextDefault.png; sourceTree = "<group>"; };
+		F2B84835AAB95B154406107B /* TelegramNeonTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramNeonTool.swift; sourceTree = "<group>"; };
+		F391B84CFE83B7378154CC0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5922E887620753D0C3944E1 /* ToolPenTip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolPenTip.png; sourceTree = "<group>"; };
+		F6F6F9D13ADBEF5A8FF54838 /* EyedropperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyedropperView.swift; sourceTree = "<group>"; };
+		F7DC7A019C99E5D5356FC767 /* TelegramPenTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramPenTool.swift; sourceTree = "<group>"; };
+		FA63619CD043FEB81CA2A442 /* ToolBlur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolBlur.png; sourceTree = "<group>"; };
+		FB9360D9B527B6C59E30C43B /* ScreenshotDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotDrop.swift; sourceTree = "<group>"; };
+		FCB4778E8F72688137EFB44A /* shapeBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shapeBubble.png; sourceTree = "<group>"; };
+		FF540993555A3BB9E5F71882 /* ios-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-filled.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1C72FE887C212CA98AA6FCBA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CDFAB014CFF0BD39936661BC /* grayscale.png */,
+				9899F3BE9DC5A05AA59CD1FC /* LICENSE.txt */,
+				262086A078CBAD6CE054B41A /* marker.png */,
+				71400EEEA1EBBF57B509FCD0 /* Markup.icns */,
+				80A802E0FBEB04619B67DDC3 /* NOTICE.txt */,
+				573DC64C81C46F640A25DD06 /* roundSpectrum.png */,
+				2E6AB7DA3826F8D89D03800C /* shapeArrow.png */,
+				FCB4778E8F72688137EFB44A /* shapeBubble.png */,
+				6690830CE19FA9C77D252EB4 /* shapeEllipse.png */,
+				9FF576D93661CA8CDA670C16 /* shapeFill.png */,
+				810F958671EF3EBDFC3630E0 /* shapeFlip.png */,
+				EC4173DB65C04A2794FF104F /* shapeRectangle.png */,
+				21E788AB995BDE1479B041F3 /* shapeStar.png */,
+				0D4B8A793F1AE48B23246DBC /* shapeStroke.png */,
+				D0F8AD1CDD3293CC6DABED9F /* spectrum.png */,
+				EF607B445426D42ED734C4F3 /* TextDefault.png */,
+				E389004FA23CB5C35CB8750D /* TextFilled.png */,
+				9EC9D227E128EF99A55B4A2C /* TextSemi.png */,
+				745850832A0EBF581B6230A2 /* TextStroke.png */,
+				8C0066FE18E0A6F5B92051A9 /* ToolArrow.png */,
+				6551B0ED4502430339C41C57 /* ToolArrowShadow.png */,
+				03FC62D84229B15E1CDD34A7 /* ToolArrowTip.png */,
+				FA63619CD043FEB81CA2A442 /* ToolBlur.png */,
+				AA04DAA440837AA730581AAA /* ToolBlurShadow.png */,
+				D1D3EBEF03469287F1AE394A /* ToolBlurTip.png */,
+				51821EB035F07C13D1BF33F6 /* ToolEraser.png */,
+				6EBECAA84FE72A924B07A3BB /* ToolEraserShadow.png */,
+				419318A352BB79E08CE265B4 /* ToolMarker.png */,
+				5CEADC58079912B5AF91F038 /* ToolMarkerShadow.png */,
+				3858738B90E8EA9BF3D219E9 /* ToolMarkerTip.png */,
+				2F271E75211B016C7B7EECF0 /* ToolNeon.png */,
+				B4AE97C1C105F2502DACDA69 /* ToolNeonShadow.png */,
+				07062EBFBDDCCC389908F9CC /* ToolNeonTip.png */,
+				00E024A9A8193413125D87C1 /* ToolPen.png */,
+				D51122DE20A400B5B5CA129A /* ToolPenShadow.png */,
+				F5922E887620753D0C3944E1 /* ToolPenTip.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3AAF00CB9FBB0FCCB976E02D /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				FF540993555A3BB9E5F71882 /* ios-filled.png */,
+				A04DAE2C3CA50ABBD59C879C /* ios-regular.png */,
+				D5BB54A92D77211970ED93FE /* ios-semi.png */,
+				BADBEE727478680EC96DE4AE /* ios-stroke.png */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		51476044F76DDD5BE52C1B9C /* ActionExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4593EA35A7F20A968CAF2190 /* ActionViewController.swift */,
+				064889BC4495B12120028929 /* Info.plist */,
+				8351651232032DE9F04F78D6 /* MarkupAction.entitlements */,
+			);
+			path = ActionExtension;
+			sourceTree = "<group>";
+		};
+		790BF3C2B077A32DC9DA9DDE = {
+			isa = PBXGroup;
+			children = (
+				51476044F76DDD5BE52C1B9C /* ActionExtension */,
+				85EB8096B2C735B8F908AD38 /* App */,
+				E660CF75AFC9D476D7A72F12 /* Core */,
+				D3136655D1BA1C083AD2C3B4 /* Editor */,
+				1C72FE887C212CA98AA6FCBA /* Resources */,
+				D244D5C8A652B0B11452B099 /* Tests */,
+				D834734DDD6BA4676D354409 /* UITests */,
+				FFF6C1E097FDED34CCAD0EFD /* Vendor */,
+				A8735FC1DA6E947514D14EEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85EB8096B2C735B8F908AD38 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F391B84CFE83B7378154CC0C /* AppDelegate.swift */,
+				288701860FB1239C43CCE3F1 /* ImageDrop.swift */,
+				E01A63DA091B519463CC64AD /* ImageEditHistory.swift */,
+				2B461CE7B5043257EFB9971E /* Info.plist */,
+				81D0088132D6061FC0F90E4C /* MarkupDocument.swift */,
+				82B603C3EA9846237841C598 /* MarkupWindow.swift */,
+				FB9360D9B527B6C59E30C43B /* ScreenshotDrop.swift */,
+				E7334BF6BFA833AAF67037D6 /* SettingsWindowController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A8735FC1DA6E947514D14EEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C24FF82D22AF628C8309760A /* Markup.app */,
+				764F5EA658525ED0E0ED3E7F /* MarkupAction.appex */,
+				7F12F6E8C0DEC46DE098B5DE /* MarkupTests.xctest */,
+				1BA8D9A938A2C7C4A8163E54 /* MarkupUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D244D5C8A652B0B11452B099 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A04320D3519FD6BF0ECD97B6 /* AutosaveTests.swift */,
+				7304BAF21D0FC08F887A63FC /* ImageDropTests.swift */,
+				E5379664FFE45211BC101A08 /* InlineTextTests.swift */,
+				3BBB6C75C86270AEB1B1455C /* MarkupTests.swift */,
+				2DD1BBC2083F2D722DF7EBD4 /* PreviewWindowTests.swift */,
+				2D0C26632C6F078520537FBB /* QuickMarkupTests.swift */,
+				0EFA159E83A02754101967EE /* SettingsTests.swift */,
+				29F54F48CB22C65F913DE78C /* StrokeLifecycleTests.swift */,
+				E0279E8CDB45A28BDA4A930F /* TelegramPortTests.swift */,
+				3AAF00CB9FBB0FCCB976E02D /* Fixtures */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D3136655D1BA1C083AD2C3B4 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				BEFD6E42055AF282C2C3D51E /* CanvasToolbarBlur.swift */,
+				20E82733DDA35EE4A94CC7FF /* CanvasView.swift */,
+				74EE6B1C679D9FD4E5B3EABD /* EditorViewController.swift */,
+				F6F6F9D13ADBEF5A8FF54838 /* EyedropperView.swift */,
+				557463687E436867B7E1F8FF /* InlineTextView.swift */,
+				7688DE85280FE6AF94F34016 /* PreviewSurface.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		D834734DDD6BA4676D354409 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				6249115D1005ACEC163067CB /* MarkupUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		E660CF75AFC9D476D7A72F12 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				05554249AEE46C4FE8986BC3 /* ExtensionTransport.swift */,
+				DBD0A5AF49A84C2DEFDCCC94 /* ImageCodec.swift */,
+				E7C268975837FB86654EC230 /* MarkupModel.swift */,
+				CEB668E9CC436AAF643F6588 /* MarkupPreferences.swift */,
+				7E4DAD382FCDCDD22C06ED15 /* Renderer.swift */,
+				0F8B0EBB85509E6B2C7A77FC /* SampleImage.swift */,
+				3AE524D70E000E56F2810968 /* TelegramStrokeInput.swift */,
+				A8F6E2BCF3D0C6D3481211CC /* TelegramStrokeRenderer.swift */,
+				DC1C5DBDC638A198832146EC /* TelegramTextLayout.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FFF6C1E097FDED34CCAD0EFD /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				239F3F4FF9946C1078CA4C03 /* Drawing.metal */,
+				B543D8F8F09E54431A2A82EA /* DrawingEntitySnapTool.swift */,
+				A426C2BC2A1DB260ED6A53BE /* TelegramColorPicker.swift */,
+				0231D1A7284F5FA1C8B12AF3 /* TelegramDrawingState.swift */,
+				521EE207823C02A73D78A4DE /* TelegramEntitySelection.swift */,
+				2AA5FC04E9A574AE36517921 /* TelegramFastColorButton.swift */,
+				4190D342AB2FE9F5F22CBEEC /* TelegramGeometry.swift */,
+				41C16D744D6ED4EC3F3F2558 /* TelegramMarkerRenderer.swift */,
+				5B5148E9F1D0D491E339B0FE /* TelegramMarkerTool.swift */,
+				C72CE5EEF707A2D4D5D24305 /* TelegramMetalTypes.swift */,
+				F2B84835AAB95B154406107B /* TelegramNeonTool.swift */,
+				F7DC7A019C99E5D5356FC767 /* TelegramPenTool.swift */,
+				09CA2C8F696FB66E1CEA61FC /* TelegramPlatform.swift */,
+				CAE4D5B65423CB6E107FAE91 /* TelegramShapeGeometry.swift */,
+				73844E9126C333561F6F61BF /* TelegramSizeSlider.swift */,
+				A46FB87CD669299755A56413 /* TelegramTextLayoutManager.swift */,
+				33B11F62D3C9AC528213209B /* TelegramTextSettings.swift */,
+				30DCE2A5F212F07E71173680 /* TelegramToolsPanel.swift */,
+				49A0E823D9F1875DC87836F3 /* TelegramVectorEntity.swift */,
+				4C534189E85CD6237DA2254C /* TelegramVectorGeometry.swift */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CCF062B55AF361D0C81FA5C /* Markup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 133DA6114233586465A2CAB3 /* Build configuration list for PBXNativeTarget "Markup" */;
+			buildPhases = (
+				9964B0508A79906E4BFCEA0C /* Sources */,
+				0BB784BEAA64FA6C4ABC57B8 /* Resources */,
+				DC1E652A07A16946ADED2B42 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D0A7F04B26513142360B0BC /* PBXTargetDependency */,
+			);
+			name = Markup;
+			packageProductDependencies = (
+			);
+			productName = Markup;
+			productReference = C24FF82D22AF628C8309760A /* Markup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61D14D04F7F9CBF14855BB11 /* MarkupUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3BC063FEF04C2859F5F24BA /* Build configuration list for PBXNativeTarget "MarkupUITests" */;
+			buildPhases = (
+				018808A51A7EC5E92136E075 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FBD5750C3D7D4247B34A5B7 /* PBXTargetDependency */,
+			);
+			name = MarkupUITests;
+			packageProductDependencies = (
+			);
+			productName = MarkupUITests;
+			productReference = 1BA8D9A938A2C7C4A8163E54 /* MarkupUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AF1CFBB1AA84060EC1F99775 /* MarkupAction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0EB099FDC30B3F7D49AB7E /* Build configuration list for PBXNativeTarget "MarkupAction" */;
+			buildPhases = (
+				B3EE6330B680659519B3E656 /* Sources */,
+				011B8485F9D7CD6BE2342C4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarkupAction;
+			packageProductDependencies = (
+			);
+			productName = MarkupAction;
+			productReference = 764F5EA658525ED0E0ED3E7F /* MarkupAction.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C33DE9AF941FD0DD13DC134D /* MarkupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0758C3314286F2E349BC1414 /* Build configuration list for PBXNativeTarget "MarkupTests" */;
+			buildPhases = (
+				18984C9A8E2FAB2423DD7CE2 /* Sources */,
+				CAF315D2909CB42F5C50134D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42D3485FDBB207628D7AFFF9 /* PBXTargetDependency */,
+			);
+			name = MarkupTests;
+			packageProductDependencies = (
+			);
+			productName = MarkupTests;
+			productReference = 7F12F6E8C0DEC46DE098B5DE /* MarkupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0370A978D778096F5D9B5DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1CCF062B55AF361D0C81FA5C = {
+						ProvisioningStyle = Manual;
+					};
+					61D14D04F7F9CBF14855BB11 = {
+						ProvisioningStyle = Manual;
+						TestTargetID = 1CCF062B55AF361D0C81FA5C;
+					};
+					AF1CFBB1AA84060EC1F99775 = {
+						ProvisioningStyle = Manual;
+					};
+					C33DE9AF941FD0DD13DC134D = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = EC6B3084AB7DDA0B2271F567 /* Build configuration list for PBXProject "Markup" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 790BF3C2B077A32DC9DA9DDE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A8735FC1DA6E947514D14EEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CCF062B55AF361D0C81FA5C /* Markup */,
+				AF1CFBB1AA84060EC1F99775 /* MarkupAction */,
+				C33DE9AF941FD0DD13DC134D /* MarkupTests */,
+				61D14D04F7F9CBF14855BB11 /* MarkupUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		011B8485F9D7CD6BE2342C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ED0CFFF5FD7F9E8B78E9172 /* LICENSE.txt in Resources */,
+				2FB12AF5AC7DCBD479D7829E /* Markup.icns in Resources */,
+				EB9BA83EF52D199AFE973CEE /* NOTICE.txt in Resources */,
+				2086710BF0512C6396939334 /* TextDefault.png in Resources */,
+				7A4FC6C7AF6C552FF8D2B5E4 /* TextFilled.png in Resources */,
+				7513F131F61194AC98EED169 /* TextSemi.png in Resources */,
+				612A3FDAED24131801F799F3 /* TextStroke.png in Resources */,
+				82A6C2B90FEA3C97D273CDB0 /* ToolArrow.png in Resources */,
+				CC2ACADA2555176EAC796AF9 /* ToolArrowShadow.png in Resources */,
+				38AC74FCF92D3BE0C130E91A /* ToolArrowTip.png in Resources */,
+				2ACC51F5DA18047B6216631C /* ToolBlur.png in Resources */,
+				41861F53B0FF5D7035F602D4 /* ToolBlurShadow.png in Resources */,
+				A03A93AF11F660D02ABED4AF /* ToolBlurTip.png in Resources */,
+				A1A872CB18AEBF17C5E53ED7 /* ToolEraser.png in Resources */,
+				161F5E25751A77B84C4477D9 /* ToolEraserShadow.png in Resources */,
+				A21041DA9A8F74D8C327E25B /* ToolMarker.png in Resources */,
+				6296B9A8260BA96D74D0512A /* ToolMarkerShadow.png in Resources */,
+				EFAA713AA78AF3C0BED56103 /* ToolMarkerTip.png in Resources */,
+				5CEFE4C380F44C28EBC73157 /* ToolNeon.png in Resources */,
+				980ACC5D69A25A8DCAE1C8E6 /* ToolNeonShadow.png in Resources */,
+				2ACD878AB460CA66C88DABFF /* ToolNeonTip.png in Resources */,
+				1D4A06D4C6BF5BA6AE5016BD /* ToolPen.png in Resources */,
+				3C76DB9AECBB091457999269 /* ToolPenShadow.png in Resources */,
+				E6DB9196FAA249EAF732D29D /* ToolPenTip.png in Resources */,
+				17E141D169F02D6BD8ED34A7 /* grayscale.png in Resources */,
+				BA16BA2F4307C09C3D0186A5 /* marker.png in Resources */,
+				6ADCEDD3A6F405D36BD614D4 /* roundSpectrum.png in Resources */,
+				19356482DE9E929239EBC077 /* shapeArrow.png in Resources */,
+				797830CFE326424A8D621718 /* shapeBubble.png in Resources */,
+				BC82928F266ADC5E710711D2 /* shapeEllipse.png in Resources */,
+				EE8BFCA166F06E500C85BD01 /* shapeFill.png in Resources */,
+				E9E1136D55A0BFEB9A04F642 /* shapeFlip.png in Resources */,
+				F9D292F3EB85A75FFAD68ABF /* shapeRectangle.png in Resources */,
+				3FE94F07BB8B2E1365A4EC6B /* shapeStar.png in Resources */,
+				644365298DA644412EE69275 /* shapeStroke.png in Resources */,
+				A0A6FF2EE6D6CE87FC2FA843 /* spectrum.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB784BEAA64FA6C4ABC57B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2DBF5C94CE85D0FFF0DA4BC /* LICENSE.txt in Resources */,
+				1B61E80651746A981C5D0301 /* Markup.icns in Resources */,
+				3EC98D52BE880ECF88F828D8 /* NOTICE.txt in Resources */,
+				B5044A26EFC0E4DCC6C84852 /* TextDefault.png in Resources */,
+				27B92191128258E84F931386 /* TextFilled.png in Resources */,
+				02C3717AFA35B4022BE96ED7 /* TextSemi.png in Resources */,
+				4747F1C7CD0D6C0A20E6C1D9 /* TextStroke.png in Resources */,
+				FA8281FF1B5D0181D6701171 /* ToolArrow.png in Resources */,
+				9CA72301FCB7DBB9AC18876F /* ToolArrowShadow.png in Resources */,
+				501CA4F8244F0FBDBA812F26 /* ToolArrowTip.png in Resources */,
+				53B2C6CE3F4FB5231F9A0EC5 /* ToolBlur.png in Resources */,
+				BA6718AD3D4428791868E0A8 /* ToolBlurShadow.png in Resources */,
+				9A32DA4BF737D15F7FBC1D61 /* ToolBlurTip.png in Resources */,
+				739F0D411FB50BAABD858212 /* ToolEraser.png in Resources */,
+				F67FB2EA4424184B839209E1 /* ToolEraserShadow.png in Resources */,
+				00F1494EE246BDC3C9C1F131 /* ToolMarker.png in Resources */,
+				E673A2553495A9FDD9149E86 /* ToolMarkerShadow.png in Resources */,
+				9B903276DEE6D09A8263E5A2 /* ToolMarkerTip.png in Resources */,
+				4ACE4124842B9AC953DC8A64 /* ToolNeon.png in Resources */,
+				DD460B7AC38DFCEACB1282CB /* ToolNeonShadow.png in Resources */,
+				DF4D5040BB22B5314A9D3FF2 /* ToolNeonTip.png in Resources */,
+				AC7737D7A392280231778D69 /* ToolPen.png in Resources */,
+				4851AA60DA6A1C3064D562EA /* ToolPenShadow.png in Resources */,
+				4543AB3B1F53AB3E85CF325E /* ToolPenTip.png in Resources */,
+				C37667B30537E33D7085C274 /* grayscale.png in Resources */,
+				7696ABED826C3612D1CEFA78 /* marker.png in Resources */,
+				7CD32AE9AD317C86624B014B /* roundSpectrum.png in Resources */,
+				87255A8C995582368F793873 /* shapeArrow.png in Resources */,
+				FF5ACEACA4D9CAB62F51725D /* shapeBubble.png in Resources */,
+				FE3C6E57478F5A2B8262C7E9 /* shapeEllipse.png in Resources */,
+				467E808EE346F49923F98350 /* shapeFill.png in Resources */,
+				C59C91547AC274F40EB1EC27 /* shapeFlip.png in Resources */,
+				19359A5FDC1A503C9BF4D052 /* shapeRectangle.png in Resources */,
+				86788E3324E9EF163814AF96 /* shapeStar.png in Resources */,
+				EC091962869A42D614750AB8 /* shapeStroke.png in Resources */,
+				21C73543099975F19DAEBADC /* spectrum.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAF315D2909CB42F5C50134D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DA9C57792D22288072650B /* ios-filled.png in Resources */,
+				78A0E9219B7BE060972C71B6 /* ios-regular.png in Resources */,
+				94AD3EB3DDECFE4808CFC40C /* ios-semi.png in Resources */,
+				854B38EB8382B0703737BA07 /* ios-stroke.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		018808A51A7EC5E92136E075 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40EF5C774B6497E2E7B33A9 /* MarkupUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18984C9A8E2FAB2423DD7CE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9612C9EA6B4BF1271683D52 /* AutosaveTests.swift in Sources */,
+				42DBF41478225BF0993EEE51 /* ImageDropTests.swift in Sources */,
+				EE21FBA85056EEC24EE88250 /* InlineTextTests.swift in Sources */,
+				67655389406FB6FC5A53EBD5 /* MarkupTests.swift in Sources */,
+				FC358259C9647B6B9E29216C /* PreviewWindowTests.swift in Sources */,
+				DBC56E1A9E688D2D3BD3E73F /* QuickMarkupTests.swift in Sources */,
+				6177F0458E21AB827DD77C7A /* SettingsTests.swift in Sources */,
+				9F2209AB8ECA756E445A3D31 /* StrokeLifecycleTests.swift in Sources */,
+				B983EFE9125037F80B202DB2 /* TelegramPortTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9964B0508A79906E4BFCEA0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91CA4C794D285ED65B0CC2B /* AppDelegate.swift in Sources */,
+				4A8CB16285A2B6CB3045341A /* CanvasToolbarBlur.swift in Sources */,
+				B5B46D3A6BA28DBE165FFCD1 /* CanvasView.swift in Sources */,
+				6F72BC1E2A81B7E979234FAE /* Drawing.metal in Sources */,
+				2E3F382237858030D395F287 /* DrawingEntitySnapTool.swift in Sources */,
+				5AF40409D088081CF7BA1685 /* EditorViewController.swift in Sources */,
+				199A559C780DEEEBBB5EDC39 /* ExtensionTransport.swift in Sources */,
+				24AED52CB93BFE175696C12F /* EyedropperView.swift in Sources */,
+				16E0E5B6057010B3C10F0AC0 /* ImageCodec.swift in Sources */,
+				255C5EF77CB1BBE7C4D0207E /* ImageDrop.swift in Sources */,
+				957410396399DCE4DD12BAA7 /* ImageEditHistory.swift in Sources */,
+				3E8220D2A17F415AA15358CF /* InlineTextView.swift in Sources */,
+				E62564384E7FE19713C6B8B7 /* MarkupDocument.swift in Sources */,
+				A483B66AF36E4FB42E358BD7 /* MarkupModel.swift in Sources */,
+				264E8633432E4426CE524D9A /* MarkupPreferences.swift in Sources */,
+				44E8D6DBD02141E9F9015AF8 /* MarkupWindow.swift in Sources */,
+				6B0091310AE46494D71C3F13 /* PreviewSurface.swift in Sources */,
+				C029784C7CD24EA35EBD5101 /* Renderer.swift in Sources */,
+				4D0308A5059B6F3CF6DDF4C3 /* SampleImage.swift in Sources */,
+				D523D8287B1DBB6F6A89D870 /* ScreenshotDrop.swift in Sources */,
+				65E920FE56C513201F87AE20 /* SettingsWindowController.swift in Sources */,
+				B48A21AE663AB9E6573C96A6 /* TelegramColorPicker.swift in Sources */,
+				2DCC8804C5F3CF139ABC76BA /* TelegramDrawingState.swift in Sources */,
+				1713673F92AB0FEA8C752070 /* TelegramEntitySelection.swift in Sources */,
+				C6A579AB193F0CE5C3170585 /* TelegramFastColorButton.swift in Sources */,
+				47CBD9E297AABEAE716E43BB /* TelegramGeometry.swift in Sources */,
+				BAF970EC6AF20828D958B4E6 /* TelegramMarkerRenderer.swift in Sources */,
+				256C9119A483634490AB687E /* TelegramMarkerTool.swift in Sources */,
+				9D0BA833F362B9D3DEE5A49E /* TelegramMetalTypes.swift in Sources */,
+				728B4E3881F664586881DB40 /* TelegramNeonTool.swift in Sources */,
+				209DA553E2C4801476D695DB /* TelegramPenTool.swift in Sources */,
+				F9C9076BE46B18339BC9666E /* TelegramPlatform.swift in Sources */,
+				26B7C382B906AA5887C40859 /* TelegramShapeGeometry.swift in Sources */,
+				0C7C230B0BCFBB40BF9D918A /* TelegramSizeSlider.swift in Sources */,
+				C3E994EB6A7F1D62D665E32E /* TelegramStrokeInput.swift in Sources */,
+				F521C095EADD144BE1C8F3AD /* TelegramStrokeRenderer.swift in Sources */,
+				796346412B995BC035195A8B /* TelegramTextLayout.swift in Sources */,
+				4EEAB8B2592EA101E0666910 /* TelegramTextLayoutManager.swift in Sources */,
+				0DA825ACEC4AB73BC72B744C /* TelegramTextSettings.swift in Sources */,
+				FDFAEA3D7030D3F04DA6D69F /* TelegramToolsPanel.swift in Sources */,
+				6F910D2D5E2BDE44E08EC18C /* TelegramVectorEntity.swift in Sources */,
+				69825209544613A746C50C1A /* TelegramVectorGeometry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3EE6330B680659519B3E656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB6121676664121613E0ADE /* ActionViewController.swift in Sources */,
+				FFEFB5DD8803AAC8D9AB109A /* CanvasToolbarBlur.swift in Sources */,
+				B6D6DC214547FCB6D51F6CD5 /* CanvasView.swift in Sources */,
+				4D0682DA1DC4420C5F16BD94 /* Drawing.metal in Sources */,
+				C1AE2D14FD22AD3BD0ECF672 /* DrawingEntitySnapTool.swift in Sources */,
+				87DCCEDB01018E0167B09919 /* EditorViewController.swift in Sources */,
+				D385E9DD77EBB3036E1F8D50 /* ExtensionTransport.swift in Sources */,
+				0E71666DA8A0D9F6C3402B36 /* EyedropperView.swift in Sources */,
+				89BECB02200E7D83085EBB1F /* ImageCodec.swift in Sources */,
+				BFB48898BAD8A587EDCA56A0 /* InlineTextView.swift in Sources */,
+				C523C034FF32857A5B2E8955 /* MarkupModel.swift in Sources */,
+				36E998151E24D39E4DAB96BA /* MarkupPreferences.swift in Sources */,
+				60055A71A20ED0CF3BE2D425 /* PreviewSurface.swift in Sources */,
+				4F1E929AB5554C7BEEF27D13 /* Renderer.swift in Sources */,
+				2055615F5E86E6834EAC19D2 /* SampleImage.swift in Sources */,
+				C5162D4DAB569A4F81E73854 /* TelegramColorPicker.swift in Sources */,
+				264C0EFF2180CA9A5AFC0A92 /* TelegramDrawingState.swift in Sources */,
+				8F219B803A7A40472D2A78F7 /* TelegramEntitySelection.swift in Sources */,
+				886AFB4792A9D96F021FCF41 /* TelegramFastColorButton.swift in Sources */,
+				1D5C27D9AD9A585D2C27D211 /* TelegramGeometry.swift in Sources */,
+				3BBA703A08914B419608E37F /* TelegramMarkerRenderer.swift in Sources */,
+				1D4D2A1210E8DEF228FB7D2B /* TelegramMarkerTool.swift in Sources */,
+				99F1EB66F61D7131FF99DC63 /* TelegramMetalTypes.swift in Sources */,
+				91310CAAC0BF7FD628094BE0 /* TelegramNeonTool.swift in Sources */,
+				87ACC4071B280B8043EF2165 /* TelegramPenTool.swift in Sources */,
+				C02D8CCE6869E19EDC91A2FD /* TelegramPlatform.swift in Sources */,
+				242EBF661FC90A1755613216 /* TelegramShapeGeometry.swift in Sources */,
+				FD8DB63B5D72F92A340B1D34 /* TelegramSizeSlider.swift in Sources */,
+				7CA11511157888555B079512 /* TelegramStrokeInput.swift in Sources */,
+				C1EDA7C407920043106B08ED /* TelegramStrokeRenderer.swift in Sources */,
+				F4297EF029B29CDD50F9A30F /* TelegramTextLayout.swift in Sources */,
+				83B0F49DE1F70A9CB59494A7 /* TelegramTextLayoutManager.swift in Sources */,
+				CB8949972AA2B08370A20A47 /* TelegramTextSettings.swift in Sources */,
+				29E8B47B7C2F48000951E492 /* TelegramToolsPanel.swift in Sources */,
+				D13530BEA1BC52FE09F0A7ED /* TelegramVectorEntity.swift in Sources */,
+				AFB476A68F836C68CB51200C /* TelegramVectorGeometry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FBD5750C3D7D4247B34A5B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CCF062B55AF361D0C81FA5C /* Markup */;
+			targetProxy = 58A921AA4684ECEE352520CD /* PBXContainerItemProxy */;
+		};
+		2D0A7F04B26513142360B0BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF1CFBB1AA84060EC1F99775 /* MarkupAction */;
+			targetProxy = 376A1DC63FD1A56BBE84A727 /* PBXContainerItemProxy */;
+		};
+		42D3485FDBB207628D7AFFF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CCF062B55AF361D0C81FA5C /* Markup */;
+			targetProxy = BBC9ABD1C35BE607D5738F85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06E0D3BDA569F32AF4B3F6E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				MARKUP_APP_ID = dev.nikstar.Markup;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		088024010A33F130A87D129A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(MARKUP_APP_ID)";
+				PRODUCT_NAME = Markup;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3A0DF034C09CDAFEC6E7B8D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = ActionExtension/MarkupAction.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(MARKUP_APP_ID).Action";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4574DAE3F0F3C4DB107DA24F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nikstar.Markup.Tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Markup.app/Contents/MacOS/Markup";
+			};
+			name = Debug;
+		};
+		542E7B296E053AF4687E1133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = ActionExtension/MarkupAction.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(MARKUP_APP_ID).Action";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5F46F6CEE1C2471BA18A5372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nikstar.Markup.UITests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = Markup;
+			};
+			name = Debug;
+		};
+		62E9552EB831DD815A219A2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(MARKUP_APP_ID)";
+				PRODUCT_NAME = Markup;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B39B23C288E3D150583EBFC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nikstar.Markup.Tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Markup.app/Contents/MacOS/Markup";
+			};
+			name = Release;
+		};
+		DCAA5179DBE6AEF8D5177677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				MARKUP_APP_ID = dev.nikstar.Markup;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FC76868947FA29FF9538E1C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nikstar.Markup.UITests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = Markup;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0758C3314286F2E349BC1414 /* Build configuration list for PBXNativeTarget "MarkupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4574DAE3F0F3C4DB107DA24F /* Debug */,
+				B39B23C288E3D150583EBFC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		133DA6114233586465A2CAB3 /* Build configuration list for PBXNativeTarget "Markup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62E9552EB831DD815A219A2E /* Debug */,
+				088024010A33F130A87D129A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B3BC063FEF04C2859F5F24BA /* Build configuration list for PBXNativeTarget "MarkupUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F46F6CEE1C2471BA18A5372 /* Debug */,
+				FC76868947FA29FF9538E1C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BC0EB099FDC30B3F7D49AB7E /* Build configuration list for PBXNativeTarget "MarkupAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542E7B296E053AF4687E1133 /* Debug */,
+				3A0DF034C09CDAFEC6E7B8D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EC6B3084AB7DDA0B2271F567 /* Build configuration list for PBXProject "Markup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAA5179DBE6AEF8D5177677 /* Debug */,
+				06E0D3BDA569F32AF4B3F6E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0370A978D778096F5D9B5DE /* Project object */;
+}

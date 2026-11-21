@@ -1,0 +1,14 @@
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+TestResults/
+
+build-fixtures.log
+
+*.xcarchive/
+*.xcresult/
+*.p8
+*.p12
+*.provisionprofile

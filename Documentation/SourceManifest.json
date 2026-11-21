@@ -1,0 +1,251 @@
+{
+  "repository": "https://github.com/TelegramMessenger/Telegram-iOS",
+  "revision": "f1dd7a2dbd02cbbf513e75d5695d8d36d1cf5838",
+  "license": "GPL-2.0-or-later",
+  "files": [
+    {
+      "upstream": "submodules/DrawingUI/Sources/DrawingPenTool.swift",
+      "sha256": "8b2f4c2dec4c0c6606a60b1fa0d8698e8612da5ad427699d3fcdba8263cb1b32"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/DrawingNeonTool.swift",
+      "sha256": "16c08fe9737bafd709e2e8a20c5a51f15cc1099d904ad4e53c130690862f1f85"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/DrawingTools.swift",
+      "sha256": "bc4029c40f364bda3329b729d5fcfb811e48367ac4dad39f77a9cddedb4b9374"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/DrawingMetalView.swift",
+      "sha256": "e874ab17ab700b3b81077d1cc48df2443f33af33157f7ca8cac4f7de3de6d79a"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/DrawingUtils.swift",
+      "sha256": "69b3d5aa521f6597f7873bbdadccd4bed2e4b628310e1eaaa21fc88f3243b990"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/DrawingScreen.swift",
+      "sha256": "9750b1bd2310278fee427b9c73a55249e5891bf14b559bd134ea7fb702432ddc"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/ToolsComponent.swift",
+      "sha256": "9e271458e79200e31615c27d832952c15672877c820212db2691ca59259fe07c"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/DrawingVectorEntityView.swift",
+      "sha256": "616863cef2a50545c27c21cdf4f32379b9817a7bd21018b3fff484e0232564e2"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/DrawingSimpleShapeEntityView.swift",
+      "sha256": "6657b7f78b9ea4dc104913722e50945fdb8ad6babe7c5b1b0fe1b96b55c25589"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/DrawingBubbleEntityView.swift",
+      "sha256": "0417f0ed7b75de6cdfe1efd2397c1d7e25510113079cfc98986c3749f40313f3"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/DrawingTextEntityView.swift",
+      "sha256": "2b25f6d33fbfd8108fc5c4627777f2da5ab45cb8ef1bfff52424d66364ccc058"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/TextSettingsComponent.swift",
+      "sha256": "0519f96c88523fbfbcd4e40efd7054dcc89d6bf7e0a537ec5faab4d2df57b821"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/ColorPickerScreen.swift",
+      "sha256": "db12f3dc4accb99fa0bff3075db5ad5821503b00ae7f5bbf5e459d5918efb77a"
+    },
+    {
+      "upstream": "submodules/DrawingUI/MetalResources/Drawing.metal",
+      "sha256": "72d6e1a93d644306f40524e1c5053abffc80fde0a96a7eeaab4dac7ebe0d561a"
+    },
+    {
+      "upstream": "submodules/TelegramUI/Components/MediaEditor/Sources/Drawing/DrawingVectorEntity.swift",
+      "sha256": "f67fa43c3b1d4a02b2d24127f15b909325183d28e348ae816500fbe23348617f"
+    },
+    {
+      "local": "Resources/ToolNeonTip.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolNeonTip.imageset/neon.png",
+      "sha256": "8127dd8f7c7b3ec616e2e598729c53c95a1aeda0c78e5165d2bb4708d702f19c"
+    },
+    {
+      "local": "Resources/TextDefault.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/TextDefault.imageset/default.png",
+      "sha256": "b1cb074b5e65c00fc12b913b28ce8a6d91d4fb6d6af8502514e48ae00f7bbaad"
+    },
+    {
+      "local": "Resources/ToolArrow.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolArrow.imageset/arrow base.png",
+      "sha256": "0e0f9439f9c52ddcb797440fd0fe7df067fb13d2cda143ea96c842516069813a"
+    },
+    {
+      "local": "Resources/ToolNeon.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolNeon.imageset/neon.png",
+      "sha256": "26311586b52e05a1888c9b2097c48cfb0379d0ef2af09c7f909978aa7d090373"
+    },
+    {
+      "local": "Resources/ToolBlurShadow.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolBlurShadow.imageset/Blur.png",
+      "sha256": "0cd621e7b1852524e8267ceff4e6a3620ade3a936b911c9d411a3a3cff915c31"
+    },
+    {
+      "local": "Resources/ToolArrowTip.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolArrowTip.imageset/arrow tip.png",
+      "sha256": "e11bf67ec887c552e69cee007b4b16b94ed994f06b514ff17da9e18aa7ddef58"
+    },
+    {
+      "local": "Resources/ToolBlurTip.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolBlurTip.imageset/blur tip.png",
+      "sha256": "03709eb6e549bcaec53224b7ad00de134cc3af85597bea19cd5766ecf46b2035"
+    },
+    {
+      "local": "Resources/ToolArrowShadow.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolArrowShadow.imageset/Arrow.png",
+      "sha256": "5022191d95b18cd9c8ad301ee102a8ec29120426da3088f9aa2f855eba9a6421"
+    },
+    {
+      "local": "Resources/TextSemi.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/TextSemi.imageset/semi.png",
+      "sha256": "a02a1074054c556a66bf9d8185bfa3ee5e61add21370c00d1c5ef68734c95753"
+    },
+    {
+      "local": "Resources/ToolEraser.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolEraser.imageset/eraser.png",
+      "sha256": "7c407b9502727540bdc277de70bdab78cbec0d9df3a6df7ef18781f6e8492931"
+    },
+    {
+      "local": "Resources/ToolPenShadow.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolPenShadow.imageset/Pen.png",
+      "sha256": "761140057aa47bf041c639b82e82d16f7b0e114718dc9d9e8f9cfb0c143c9875"
+    },
+    {
+      "local": "Resources/grayscale.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/Grayscale.imageset/grayscale.png",
+      "sha256": "107b3b91e49326ff59ff6b49a773fb9212d0f09b4c6e02e756ebab68c72de26e"
+    },
+    {
+      "local": "Resources/TextFilled.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/TextFilled.imageset/filled.png",
+      "sha256": "5295b81c4c0a4e8d9db24cdbb6009b8ea8cfa5b76fdc82b2c96f2e4a445437c3"
+    },
+    {
+      "local": "Resources/ToolMarkerTip.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolMarkerTip.imageset/brush.png",
+      "sha256": "ff086cff91ae560fabc6153617ddddc3cc1bb719d52f1abbc2742f1c0b1cd80c"
+    },
+    {
+      "local": "Resources/ToolNeonShadow.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolNeonShadow.imageset/Neon.png",
+      "sha256": "90e488b2c4bd3084f56e76e7282950b176f822bdb0a830be91c1159a075279fd"
+    },
+    {
+      "local": "Resources/spectrum.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/Spectrum.imageset/spectrum.png",
+      "sha256": "53a298ad5407800644958d1b1d71d62cc8da23b1df15811c646fa95d9b93f476"
+    },
+    {
+      "local": "Resources/TextStroke.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/TextStroke.imageset/stroke.png",
+      "sha256": "81f7b486eb45b7bd698dae34dc35b9c9fdb090f25cd6ebb3bb2327fe6f7f99fe"
+    },
+    {
+      "local": "Resources/ToolBlur.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolBlur.imageset/blur base.png",
+      "sha256": "268f241426acb1b55614aa1236403f46f1ecf28e0b2ab1155aa523d84f3ee40b"
+    },
+    {
+      "local": "Resources/ToolEraserShadow.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolEraserShadow.imageset/Eraser.png",
+      "sha256": "3f5065f488228500c16495edf67fe56983a0b6bd9a7cf9b76d58ad6175bd35fa"
+    },
+    {
+      "local": "Resources/ToolPenTip.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolPenTip.imageset/pen.png",
+      "sha256": "332f8772a172db76b5ecd840ffc4a8b8eb193736b36c5a4c4d96f2c9cc977560"
+    },
+    {
+      "local": "Resources/ToolPen.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolPen.imageset/pen.png",
+      "sha256": "6abf7769bf2773ded596396774db97f321a7ba766dc2b698ce7690ac1821419d"
+    },
+    {
+      "local": "Resources/ToolMarker.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolMarker.imageset/brush.png",
+      "sha256": "332a4be26e6bc1890f8a7ef0553cf311abfe0dbb58c50c676ee2c1578548069a"
+    },
+    {
+      "local": "Resources/ToolMarkerShadow.png",
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ToolMarkerShadow.imageset/Brush.png",
+      "sha256": "ba22d7908a20f11293add4886a9fa39163fb9a822b0a1a8485746d69683b8403"
+    },
+    {
+      "local": "Resources/marker.png",
+      "upstream": "submodules/DrawingUI/Resources/marker.png",
+      "sha256": "6d916f2746b89251fa30393cab63d8f27c61508ae63d5e357af24c8b7f5c8172"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/DrawingView.swift",
+      "sha256": "feb2ef90e9a9bf1ed16234d49b6d62df52d8c8449c05e25c0b789407322befd6"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/DrawingGesture.swift",
+      "sha256": "0eb6bf6ff23fa25a062e5fbad98be73abd0dc6e1f24f2550f99066a0f5512b24"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/DrawingStickerEntityView.swift",
+      "sha256": "166cf4a3b88f120c1d7c4c93ec6ff63d74398be99a93101929cd783cc2897af6"
+    },
+    {
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/Flip.imageset/shapeFlip.png",
+      "sha256": "0c6e3b935e9b61ff9f570756e9aff827827b18dab4847206906e6578ba3d5f8d"
+    },
+    {
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/Fill.imageset/shapeFill.png",
+      "sha256": "38075e14f826418f1987a8eeb16ff4739c8571f2605b2f6316ad7edefc99a03a"
+    },
+    {
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/Stroke.imageset/shapeStroke.png",
+      "sha256": "20421c635003bfb02393a847bd67d06c7604bc44a88a6951bd8f13481b79782f"
+    },
+    {
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ShapeEllipse.imageset/shapeEllipse.png",
+      "sha256": "b850c573c7571a90d5d1d1684364ae9fc003ed1cd5159f33671bde6f279acf3a"
+    },
+    {
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ShapeRectangle.imageset/shapeRectangle.png",
+      "sha256": "c9ab2f7c978cd2275a48b901e9648e8a9acc98b79db9d2558fd172501d7c2c46"
+    },
+    {
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ShapeBubble.imageset/shapeBubble.png",
+      "sha256": "8153de99590a71fcf3d7df88e2d5624a399820c328f37c6cfb463837e0be7846"
+    },
+    {
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ShapeStar.imageset/shapeStar.png",
+      "sha256": "84b59d37704db19eb929f58831d12b9a5843f84d0c5777c4f4e02c221a5599e9"
+    },
+    {
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/ShapeArrow.imageset/shapeArrow.png",
+      "sha256": "6b8687e9ba76aefa7af5387eef9bc274e8ced6f59c63c23f4a0d7fc2b4091a8d"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/DrawingEntitySnapTool.swift",
+      "sha256": "6f5cfa4dd0613acd22e36a50d1be0cab8544af210a93f6c4290b1b869f1d2d08"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/DrawingEntitiesView.swift",
+      "sha256": "bc2c898ab67214cd26ef4663e1e6eab9584ec8c736972ad484c6916ee0e88ee0"
+    },
+    {
+      "upstream": "submodules/TelegramUI/Components/MediaEditor/Sources/Drawing/DrawingTextEntity.swift",
+      "sha256": "f8808a7be0a4d7682c69a9a13d5688fa3b4ab5f2bb9d91112e77efdd313f37c3"
+    },
+    {
+      "upstream": "submodules/TelegramUI/Images.xcassets/Media Editor/RoundSpectrum.imageset/spectrum.png",
+      "sha256": "9ec5cd64004edc0c6792e8907c110e412729051b24d258a312d07d64ce0c290a"
+    },
+    {
+      "upstream": "submodules/DrawingUI/Sources/EyedropperView.swift",
+      "sha256": "932885ea2f8aa48177b3fc6d36efc089a253177eee2f4f0409f28d6ab3f8cdb2"
+    }
+  ]
+}

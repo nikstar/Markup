@@ -1,0 +1,76 @@
+name: Markup
+options:
+  deploymentTarget:
+    macOS: '27.0'
+  createIntermediateGroups: true
+settings:
+  base:
+    MARKUP_APP_ID: dev.nikstar.Markup
+    SWIFT_VERSION: '5.0'
+    MACOSX_DEPLOYMENT_TARGET: '27.0'
+    CODE_SIGN_IDENTITY: '-'
+    CODE_SIGN_STYLE: Manual
+    ENABLE_HARDENED_RUNTIME: YES
+    COMBINE_HIDPI_IMAGES: YES
+    CURRENT_PROJECT_VERSION: 1
+    MARKETING_VERSION: '1.0'
+targets:
+  Markup:
+    type: application
+    platform: macOS
+    sources: [App, Core, Editor, Vendor, Resources]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(MARKUP_APP_ID)
+        INFOPLIST_FILE: App/Info.plist
+        PRODUCT_NAME: Markup
+        ENABLE_APP_SANDBOX: NO
+    dependencies:
+      - target: MarkupAction
+        embed: true
+  MarkupAction:
+    type: app-extension
+    platform: macOS
+    sources: [ActionExtension, Core, Editor, Vendor, Resources]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(MARKUP_APP_ID).Action
+        INFOPLIST_FILE: ActionExtension/Info.plist
+        CODE_SIGN_ENTITLEMENTS: ActionExtension/MarkupAction.entitlements
+        APPLICATION_EXTENSION_API_ONLY: YES
+        SKIP_INSTALL: YES
+  MarkupTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [Tests]
+    dependencies:
+      - target: Markup
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.nikstar.Markup.Tests
+        GENERATE_INFOPLIST_FILE: YES
+  MarkupUITests:
+    type: bundle.ui-testing
+    platform: macOS
+    sources: [UITests]
+    dependencies:
+      - target: Markup
+    settings:
+      base:
+        ENABLE_HARDENED_RUNTIME: NO
+        PRODUCT_BUNDLE_IDENTIFIER: dev.nikstar.Markup.UITests
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  Markup:
+    build:
+      targets:
+        Markup: all
+    test:
+      targets: [MarkupTests]
+      gatherCoverageData: true
+  MarkupUI:
+    build:
+      targets:
+        Markup: all
+    test:
+      targets: [MarkupUITests]

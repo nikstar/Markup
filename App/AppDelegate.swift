@@ -1,10 +1,14 @@
 import AppKit
+import Sparkle
 import UniformTypeIdentifiers
 
 @main
 final class AppDelegate: NSObject, NSApplicationDelegate {
   private var welcome: NSWindow?
-  @MainActor private lazy var settings = SettingsWindowController()
+  private lazy var updateController = SPUStandardUpdaterController(
+    startingUpdater: false, updaterDelegate: nil, userDriverDelegate: self)
+  @MainActor private lazy var settings = SettingsWindowController(updater: updateController.updater)
+  private weak var statusUpdateItem: NSMenuItem?
   private var statusItem: NSStatusItem?
   private var statusDrop: ImageDropTarget?
   private var screenshotDrop: ScreenshotDropMonitor?
@@ -24,8 +28,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     guard !Self.isTestHost else { return }
     installMenu()
     NSApp.servicesProvider = self
-    if !ProcessInfo.processInfo.arguments.contains("--ui-test") { NSUpdateDynamicServices() }
-    if !ProcessInfo.processInfo.arguments.contains("--ui-test") { installStatusItem() }
+    if !ProcessInfo.processInfo.arguments.contains("--ui-test") {
+      NSUpdateDynamicServices()
+      installStatusItem()
+      updateController.startUpdater()
+    }
     // The open-application event is available during didFinishLaunching.
     if Self.launchesInBackground(arguments: ProcessInfo.processInfo.arguments,
                                  event: NSAppleEventManager.shared().currentAppleEvent) { return }
@@ -203,7 +210,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
   }
   @objc func about(_ sender: Any?) {
     NSApp.orderFrontStandardAboutPanel(options: [
-      .applicationName: "Markup", .applicationVersion: "1.0",
+      .applicationName: "Markup",
       .credits: NSAttributedString(
         string:
           "Independent AppKit screenshot editor.\nDrawing geometry adapted from Telegram iOS.\nGNU GPL v2 or later. No Telegram account required."
@@ -232,6 +239,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     }
     let app = menu("Markup")
     item(app, "About Markup", #selector(about), "", .command, self)
+    app.addItem(makeUpdateMenuItem())
     app.addItem(.separator())
     item(app, "Settings…", #selector(showSettings), ",", .command, self)
     app.addItem(.separator())
@@ -313,6 +321,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     menu.addItem(.separator())
     let settingsItem = menu.addItem(withTitle: "Settings…", action: #selector(showSettings), keyEquivalent: ",")
     settingsItem.target = self
+    let update = makeUpdateMenuItem()
+    menu.addItem(update)
+    statusUpdateItem = update
     let quit = menu.addItem(withTitle: "Quit Markup", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
     quit.target = NSApp
     statusItem?.menu = menu
@@ -331,5 +342,40 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         files: imageDrop.file, image: imageDrop.image)
     }
     welcome?.makeKeyAndOrderFront(nil)
+  }
+}
+
+extension AppDelegate: SPUStandardUserDriverDelegate {
+  private func makeUpdateMenuItem() -> NSMenuItem {
+    let item = NSMenuItem(title: "Check for Updates…",
+                          action: #selector(SPUStandardUpdaterController.checkForUpdates(_:)), keyEquivalent: "")
+    item.target = updateController
+    return item
+  }
+
+  var supportsGentleScheduledUpdateReminders: Bool { true }
+
+  func standardUserDriverShouldHandleShowingScheduledUpdate(_ update: SUAppcastItem,
+                                                            andInImmediateFocus immediateFocus: Bool) -> Bool {
+    NSApp.isActive
+  }
+
+  func standardUserDriverWillHandleShowingUpdate(_ handleShowingUpdate: Bool, forUpdate update: SUAppcastItem,
+                                                 state: SPUUserUpdateState) {
+    if !handleShowingUpdate { showUpdateReminder(version: update.displayVersionString) }
+  }
+
+  func standardUserDriverDidReceiveUserAttention(forUpdate update: SUAppcastItem) {
+    showUpdateReminder(version: nil)
+  }
+
+  func standardUserDriverWillFinishUpdateSession() { showUpdateReminder(version: nil) }
+
+  private func showUpdateReminder(version: String?) {
+    let title = version.map { "Update to Markup " + $0 + "…" }
+    statusUpdateItem?.title = title ?? "Check for Updates…"
+    statusItem?.button?.image = NSImage(systemSymbolName: title == nil ? "pencil.tip.crop.circle" : "arrow.down.circle.fill",
+                                       accessibilityDescription: title ?? "Markup")
+    statusItem?.button?.toolTip = title ?? "Markup • Drop an image to edit"
   }
 }

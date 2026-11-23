@@ -3,6 +3,10 @@ options:
   deploymentTarget:
     macOS: '27.0'
   createIntermediateGroups: true
+packages:
+  Sparkle:
+    url: https://github.com/sparkle-project/Sparkle
+    exactVersion: 2.10.1
 settings:
   base:
     MARKUP_APP_ID: dev.nikstar.Markup
@@ -12,8 +16,8 @@ settings:
     CODE_SIGN_STYLE: Manual
     ENABLE_HARDENED_RUNTIME: YES
     COMBINE_HIDPI_IMAGES: YES
-    CURRENT_PROJECT_VERSION: 3
-    MARKETING_VERSION: '1.0.2'
+    CURRENT_PROJECT_VERSION: 4
+    MARKETING_VERSION: '1.1'
 targets:
   Markup:
     type: application
@@ -27,6 +31,7 @@ targets:
         ASSETCATALOG_COMPILER_APPICON_NAME: Markup
         ENABLE_APP_SANDBOX: NO
     dependencies:
+      - package: Sparkle
       - target: MarkupAction
         embed: true
   MarkupAction:

@@ -37,6 +37,7 @@
 		29E8B47B7C2F48000951E492 /* TelegramToolsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DCE2A5F212F07E71173680 /* TelegramToolsPanel.swift */; };
 		2ACC51F5DA18047B6216631C /* ToolBlur.png in Resources */ = {isa = PBXBuildFile; fileRef = FA63619CD043FEB81CA2A442 /* ToolBlur.png */; };
 		2ACD878AB460CA66C88DABFF /* ToolNeonTip.png in Resources */ = {isa = PBXBuildFile; fileRef = 07062EBFBDDCCC389908F9CC /* ToolNeonTip.png */; };
+		2BC52E1B46C6C6AB6B6C50E8 /* Sparkle-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = F811440A7EF4B719F57A888A /* Sparkle-LICENSE.txt */; };
 		2DCC8804C5F3CF139ABC76BA /* TelegramDrawingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231D1A7284F5FA1C8B12AF3 /* TelegramDrawingState.swift */; };
 		2E3F382237858030D395F287 /* DrawingEntitySnapTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B543D8F8F09E54431A2A82EA /* DrawingEntitySnapTool.swift */; };
 		36E998151E24D39E4DAB96BA /* MarkupPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB668E9CC436AAF643F6588 /* MarkupPreferences.swift */; };
@@ -73,6 +74,7 @@
 		644365298DA644412EE69275 /* shapeStroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B8A793F1AE48B23246DBC /* shapeStroke.png */; };
 		65E920FE56C513201F87AE20 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7334BF6BFA833AAF67037D6 /* SettingsWindowController.swift */; };
 		67655389406FB6FC5A53EBD5 /* MarkupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB6C75C86270AEB1B1455C /* MarkupTests.swift */; };
+		682A2BFE9CCC17686A3E2D94 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 8F1480CFC139202CD12E77D1 /* Sparkle */; };
 		69825209544613A746C50C1A /* TelegramVectorGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C534189E85CD6237DA2254C /* TelegramVectorGeometry.swift */; };
 		6ADCEDD3A6F405D36BD614D4 /* roundSpectrum.png in Resources */ = {isa = PBXBuildFile; fileRef = 573DC64C81C46F640A25DD06 /* roundSpectrum.png */; };
 		6B0091310AE46494D71C3F13 /* PreviewSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688DE85280FE6AF94F34016 /* PreviewSurface.swift */; };
@@ -308,11 +310,23 @@
 		F5922E887620753D0C3944E1 /* ToolPenTip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolPenTip.png; sourceTree = "<group>"; };
 		F6F6F9D13ADBEF5A8FF54838 /* EyedropperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyedropperView.swift; sourceTree = "<group>"; };
 		F7DC7A019C99E5D5356FC767 /* TelegramPenTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramPenTool.swift; sourceTree = "<group>"; };
+		F811440A7EF4B719F57A888A /* Sparkle-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Sparkle-LICENSE.txt"; sourceTree = "<group>"; };
 		FA63619CD043FEB81CA2A442 /* ToolBlur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolBlur.png; sourceTree = "<group>"; };
 		FB9360D9B527B6C59E30C43B /* ScreenshotDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotDrop.swift; sourceTree = "<group>"; };
 		FCB4778E8F72688137EFB44A /* shapeBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shapeBubble.png; sourceTree = "<group>"; };
 		FF540993555A3BB9E5F71882 /* ios-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-filled.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05FFB6F10E363226ED879069 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682A2BFE9CCC17686A3E2D94 /* Sparkle in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1C72FE887C212CA98AA6FCBA /* Resources */ = {
@@ -405,6 +419,7 @@
 				82B603C3EA9846237841C598 /* MarkupWindow.swift */,
 				FB9360D9B527B6C59E30C43B /* ScreenshotDrop.swift */,
 				E7334BF6BFA833AAF67037D6 /* SettingsWindowController.swift */,
+				F811440A7EF4B719F57A888A /* Sparkle-LICENSE.txt */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -510,6 +525,7 @@
 			buildPhases = (
 				9964B0508A79906E4BFCEA0C /* Sources */,
 				0BB784BEAA64FA6C4ABC57B8 /* Resources */,
+				05FFB6F10E363226ED879069 /* Frameworks */,
 				DC1E652A07A16946ADED2B42 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
@@ -519,6 +535,7 @@
 			);
 			name = Markup;
 			packageProductDependencies = (
+				8F1480CFC139202CD12E77D1 /* Sparkle */,
 			);
 			productName = Markup;
 			productReference = C24FF82D22AF628C8309760A /* Markup.app */;
@@ -612,6 +629,9 @@
 			);
 			mainGroup = 790BF3C2B077A32DC9DA9DDE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1A2CE5CFC32E7707AFB0CAFF /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A8735FC1DA6E947514D14EEC /* Products */;
 			projectDirPath = "";
@@ -675,6 +695,7 @@
 				D2DBF5C94CE85D0FFF0DA4BC /* LICENSE.txt in Resources */,
 				631814F0D947DF656D6F8A0C /* Markup.icon in Resources */,
 				3EC98D52BE880ECF88F828D8 /* NOTICE.txt in Resources */,
+				2BC52E1B46C6C6AB6B6C50E8 /* Sparkle-LICENSE.txt in Resources */,
 				B5044A26EFC0E4DCC6C84852 /* TextDefault.png in Resources */,
 				27B92191128258E84F931386 /* TextFilled.png in Resources */,
 				02C3717AFA35B4022BE96ED7 /* TextSemi.png in Resources */,
@@ -899,7 +920,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -913,7 +934,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.1;
 				MARKUP_APP_ID = dev.nikstar.Markup;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1084,7 +1105,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1104,7 +1125,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.1;
 				MARKUP_APP_ID = dev.nikstar.Markup;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1184,6 +1205,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A2CE5CFC32E7707AFB0CAFF /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = exactVersion;
+				version = 2.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F1480CFC139202CD12E77D1 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A2CE5CFC32E7707AFB0CAFF /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F0370A978D778096F5D9B5DE /* Project object */;
 }

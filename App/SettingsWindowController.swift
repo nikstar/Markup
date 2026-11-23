@@ -1,16 +1,20 @@
 import AppKit
 import ServiceManagement
+import Sparkle
 
 @MainActor
 final class SettingsWindowController: NSWindowController, NSWindowDelegate {
   private let preferences: MarkupPreferences
+  private let updater: SPUUpdater
+  private let updateChecks = NSSwitch()
   private let stack = NSStackView()
   private let history = NSSwitch()
   private let pan = NSPopUpButton()
   private let login = NSSwitch()
   private let loginItems = NSButton(title: "Allow Markup in Login Items…", target: nil, action: nil)
 
-  init(preferences: MarkupPreferences = MarkupPreferences()) {
+  init(updater: SPUUpdater, preferences: MarkupPreferences = MarkupPreferences()) {
+    self.updater = updater
     self.preferences = preferences
     let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 414, height: 210),
                           styleMask: [.titled, .closable], backing: .buffered, defer: false)
@@ -25,6 +29,8 @@ final class SettingsWindowController: NSWindowController, NSWindowDelegate {
     pan.addItems(withTitles: ["System default", "Reversed"])
     pan.target = self
     pan.action = #selector(changePan)
+    updateChecks.target = self
+    updateChecks.action = #selector(changeUpdateChecks)
     login.target = self
     login.action = #selector(changeLogin)
     loginItems.target = self
@@ -41,6 +47,7 @@ final class SettingsWindowController: NSWindowController, NSWindowDelegate {
     for (index, row) in [
       setting("Keep edit history", detail: "Restore layers and undo steps when reopening an image.", control: history),
       setting("Pan direction", control: pan),
+      setting("Automatically check for updates", control: updateChecks),
       setting("Launch at login", detail: "Start in the menu bar with screenshot monitoring.", control: login),
     ].enumerated() {
       if index > 0 {
@@ -91,6 +98,7 @@ final class SettingsWindowController: NSWindowController, NSWindowDelegate {
 
   @objc private func changeHistory() { preferences.keepsEditHistory = history.state == .on }
   @objc private func changePan() { preferences.reversesScrollPan = pan.indexOfSelectedItem == 1 }
+  @objc private func changeUpdateChecks() { updater.automaticallyChecksForUpdates = updateChecks.state == .on }
   @objc private func changeLogin() {
     do {
       let service = SMAppService.mainApp
@@ -115,6 +123,7 @@ final class SettingsWindowController: NSWindowController, NSWindowDelegate {
 
   @objc private func refresh() {
     guard let window, let content = window.contentView else { return }
+    updateChecks.state = updater.automaticallyChecksForUpdates ? .on : .off
     history.state = preferences.keepsEditHistory ? .on : .off
     pan.selectItem(at: preferences.reversesScrollPan ? 1 : 0)
     let status = SMAppService.mainApp.status

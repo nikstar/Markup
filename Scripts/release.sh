@@ -26,6 +26,7 @@ if [[ ! -d "$archive" ]]; then
   git archive "$revision" | tar -x -C "$work/source"
   xcodebuild -project "$work/source/Markup.xcodeproj" -scheme Markup -configuration Release \
     -destination 'generic/platform=macOS' -derivedDataPath "$work/DerivedData" \
+    -clonedSourcePackagesDirPath "$out/SourcePackages" -onlyUsePackageVersionsFromResolvedFile \
     -archivePath "$work/Markup.xcarchive" -allowProvisioningUpdates ARCHS=arm64 \
     DEVELOPMENT_TEAM="$team" CODE_SIGN_STYLE=Automatic 'CODE_SIGN_IDENTITY=Apple Development' archive
   mv "$work/Markup.xcarchive" "$archive"
@@ -72,6 +73,27 @@ spctl --assess --type execute --verbose=2 "$download"
 if [[ "$zip" == "$work/$name" ]]; then mv "$zip" "$out/$name"; fi
 (cd "$out" && shasum -a 256 "$name") > "$work/$name.sha256"
 mv "$work/$name.sha256" "$out/"
+# Publish the signed feed beside the ZIP so the latest release switches both together.
+sparkle="$out/SourcePackages/artifacts/sparkle/Sparkle/bin"
+account=dev.nikstar.Markup
+publicKey="$(plutil -extract SUPublicEDKey raw "$app/Contents/Info.plist")"
+[[ "$("$sparkle/generate_keys" --account "$account" -p)" == "$publicKey" ]] || {
+  echo "The Sparkle public key in Markup must match the $account Keychain account." >&2; exit 1;
+}
+feed="$work/feed"
+mkdir "$feed"
+ln "$out/$name" "$feed/$name"
+releaseNotes="${notes:-Documentation/Releases/$version.md}"
+cp "$releaseNotes" "$feed/${name%.zip}.md"
+releaseURL="https://github.com/$repo/releases"
+"$sparkle/generate_appcast" --account "$account" --maximum-deltas 0 --embed-release-notes \
+  --link "$releaseURL/tag/v$version" --full-release-notes-url "$releaseURL" \
+  --download-url-prefix "$releaseURL/download/v$version/" "$feed"
+"$sparkle/sign_update" --account "$account" --verify "$feed/appcast.xml"
+signature="$(xmllint --xpath 'string(/rss/channel/item/enclosure/@*[local-name()="edSignature"])' "$feed/appcast.xml")"
+[[ -n "$signature" ]]
+"$sparkle/sign_update" --account "$account" --verify "$out/$name" "$signature"
+mv "$feed/appcast.xml" "$out/appcast.xml"
 echo "Verified $name (build $build) from $revision in $out"
 
 if [[ -n "$notes" ]]; then
@@ -85,6 +107,6 @@ if [[ -n "$notes" ]]; then
   else
     git push origin "$revision:refs/tags/$tag"
   fi
-  gh release create "$tag" "$out/$name" "$out/$name.sha256" --repo "$repo" --verify-tag \
+  gh release create "$tag" "$out/$name" "$out/$name.sha256" "$out/appcast.xml" --repo "$repo" --verify-tag \
     --title "Markup $version" --notes-file "$notes" --latest
 fi

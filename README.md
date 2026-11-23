@@ -11,6 +11,8 @@ Draw an arrow, click to type a caption, then press **⌘C** to copy the finished
 
 Requires **macOS 27 or later on Apple silicon**. Download the app ZIP from [GitHub Releases](https://github.com/nikstar/Markup/releases), unzip it, and move **Markup.app** to **Applications**.
 
+From version 1.1, choose **Check for Updates…** in the Markup menu or the menu-bar pencil. Turn on **Automatically check for updates** in Settings if you want Markup to check in the background.
+
 ## Mark up a screenshot
 
 - **Start with a screenshot.** With Markup running, drag the macOS screenshot thumbnail onto the drop area above it. You can also drop an image on the menu-bar pencil, use Finder’s **Open With → Markup**, or press **⇧⌘N** to start from the clipboard.

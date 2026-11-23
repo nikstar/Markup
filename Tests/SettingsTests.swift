@@ -1,4 +1,5 @@
 import AppKit
+import Sparkle
 import UniformTypeIdentifiers
 import XCTest
 @testable import Markup
@@ -115,4 +116,21 @@ final class SettingsTests: XCTestCase {
     XCTAssertEqual(item.action, #selector(AppDelegate.showSettings(_:)))
     XCTAssertTrue(item.target === delegate)
   }
+  func testUpdateCommandUsesSparkleAndRequiresSignedFeed() throws {
+    let oldMenu = NSApp.mainMenu, oldWindows = NSApp.windowsMenu, oldServices = NSApp.servicesMenu
+    defer { NSApp.mainMenu = oldMenu; NSApp.windowsMenu = oldWindows; NSApp.servicesMenu = oldServices }
+    let delegate = AppDelegate()
+    delegate.installMenu()
+    let check = try XCTUnwrap(NSApp.mainMenu?.items.first?.submenu?.item(withTitle: "Check for Updates…"))
+    XCTAssertTrue(check.target is SPUStandardUpdaterController)
+    XCTAssertEqual(check.action, #selector(SPUStandardUpdaterController.checkForUpdates(_:)))
+    let info = try XCTUnwrap(Bundle.main.infoDictionary)
+    XCTAssertEqual(info["SUFeedURL"] as? String, "https://github.com/nikstar/Markup/releases/latest/download/appcast.xml")
+    let key = try XCTUnwrap(info["SUPublicEDKey"] as? String)
+    XCTAssertEqual(Data(base64Encoded: key)?.count, 32)
+    XCTAssertEqual(info["SURequireSignedFeed"] as? Bool, true)
+    XCTAssertEqual(info["SUVerifyUpdateBeforeExtraction"] as? Bool, true)
+    XCTAssertEqual(info["SUEnableAutomaticChecks"] as? Bool, false)
+  }
+
 }

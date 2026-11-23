@@ -1,202 +1,193 @@
 {
-  "fill": {
-    "automatic-gradient": "display-p3:0.09412,0.09412,0.16078,1.00000"
+  "features" : [
+    "refractivity",
+    "specular-location"
+  ],
+  "fill" : {
+    "automatic-gradient" : "display-p3:0.09412,0.09412,0.16078,1.00000"
   },
-  "fill-specializations": [
+  "groups" : [
     {
-      "appearance": "dark",
-      "value": {
-        "automatic-gradient": "display-p3:0.09412,0.09412,0.14118,1.00000"
+      "blur-material" : 0,
+      "layers" : [
+        {
+          "fill-specializations" : [
+            {
+              "appearance" : "tinted",
+              "value" : {
+                "solid" : "display-p3:1.00000,1.00000,1.00000,1.00000"
+              }
+            }
+          ],
+          "glass" : false,
+          "image-name" : "felt-cut.svg",
+          "name" : "Felt cut",
+          "position" : {
+            "scale" : 1.1000000000000005,
+            "translation-in-points" : [
+              0,
+              60
+            ]
+          }
+        },
+        {
+          "fill-specializations" : [
+            {
+              "appearance" : "tinted",
+              "value" : {
+                "solid" : "display-p3:0.95294,0.95294,0.95294,1.00000"
+              }
+            }
+          ],
+          "glass" : true,
+          "image-name" : "ink-tip.svg",
+          "name" : "Ink tip",
+          "position" : {
+            "scale" : 1.1000000000000005,
+            "translation-in-points" : [
+              0,
+              60
+            ]
+          }
+        },
+        {
+          "fill-specializations" : [
+            {
+              "appearance" : "tinted",
+              "value" : {
+                "solid" : "display-p3:0.98039,0.98039,0.98039,1.00000"
+              }
+            }
+          ],
+          "glass" : true,
+          "image-name" : "ink-band.svg",
+          "name" : "Ink band",
+          "position" : {
+            "scale" : 1.1000000000000005,
+            "translation-in-points" : [
+              0,
+              60
+            ]
+          }
+        }
+      ],
+      "lighting" : "individual",
+      "name" : "Felt and ink band",
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.1
+      },
+      "specular" : "outside",
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.09
+      }
+    },
+    {
+      "blur-material" : 0,
+      "layers" : [
+        {
+          "fill-specializations" : [
+            {
+              "appearance" : "tinted",
+              "value" : {
+                "solid" : "display-p3:0.67059,0.67059,0.67059,1.00000"
+              }
+            }
+          ],
+          "glass" : false,
+          "image-name" : "right-facet.svg",
+          "name" : "Right facet",
+          "position" : {
+            "scale" : 1.1000000000000005,
+            "translation-in-points" : [
+              0,
+              60
+            ]
+          }
+        },
+        {
+          "fill-specializations" : [
+            {
+              "appearance" : "tinted",
+              "value" : {
+                "solid" : "display-p3:0.81569,0.81569,0.81569,1.00000"
+              }
+            }
+          ],
+          "glass" : true,
+          "image-name" : "grip.svg",
+          "name" : "Grip",
+          "position" : {
+            "scale" : 1.1000000000000005,
+            "translation-in-points" : [
+              0,
+              60
+            ]
+          }
+        }
+      ],
+      "lighting" : "combined",
+      "name" : "Glass grip",
+      "refractivity" : {
+        "depth" : 0.72,
+        "enabled" : true,
+        "strength" : 0.15
+      },
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.08
+      },
+      "specular" : "inside",
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.17
+      }
+    },
+    {
+      "blur-material" : 0,
+      "layers" : [
+        {
+          "fill-specializations" : [
+            {
+              "appearance" : "tinted",
+              "value" : {
+                "solid" : "display-p3:0.60392,0.60392,0.60392,1.00000"
+              }
+            }
+          ],
+          "glass" : true,
+          "image-name" : "brush.svg",
+          "name" : "Brush",
+          "position" : {
+            "scale" : 1.1000000000000005,
+            "translation-in-points" : [
+              0,
+              60
+            ]
+          }
+        }
+      ],
+      "lighting" : "individual",
+      "name" : "Barrel",
+      "refractivity" : {
+        "depth" : 0.71,
+        "enabled" : true,
+        "strength" : 0.66
+      },
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.3
+      },
+      "specular" : "inside",
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.11
       }
     }
   ],
-  "groups": [
-    {
-      "name": "Felt and ink band",
-      "layers": [
-        {
-          "name": "Felt cut",
-          "image-name": "felt-cut.svg",
-          "glass": false,
-          "fill-specializations": [
-            {
-              "appearance": "tinted",
-              "value": {
-                "solid": "display-p3:1.00000,1.00000,1.00000,1.00000"
-              }
-            }
-          ]
-        },
-        {
-          "name": "Ink tip",
-          "image-name": "ink-tip.svg",
-          "glass": true,
-          "fill-specializations": [
-            {
-              "appearance": "tinted",
-              "value": {
-                "solid": "display-p3:0.95294,0.95294,0.95294,1.00000"
-              }
-            }
-          ]
-        },
-        {
-          "name": "Ink band",
-          "image-name": "ink-band.svg",
-          "glass": true,
-          "fill-specializations": [
-            {
-              "appearance": "tinted",
-              "value": {
-                "solid": "display-p3:0.98039,0.98039,0.98039,1.00000"
-              }
-            }
-          ]
-        }
-      ],
-      "lighting": "individual",
-      "specular": "outside",
-      "translucency": {
-        "enabled": true,
-        "value": 0.09
-      },
-      "blur-material": 0,
-      "shadow": {
-        "kind": "neutral",
-        "opacity": 0.1
-      }
-    },
-    {
-      "name": "Glass grip",
-      "layers": [
-        {
-          "name": "Right facet",
-          "image-name": "right-facet.svg",
-          "glass": false,
-          "fill-specializations": [
-            {
-              "appearance": "tinted",
-              "value": {
-                "solid": "display-p3:0.67059,0.67059,0.67059,1.00000"
-              }
-            }
-          ]
-        },
-        {
-          "name": "Grip",
-          "image-name": "grip.svg",
-          "glass": true,
-          "fill-specializations": [
-            {
-              "appearance": "tinted",
-              "value": {
-                "solid": "display-p3:0.81569,0.81569,0.81569,1.00000"
-              }
-            }
-          ]
-        }
-      ],
-      "lighting": "combined",
-      "specular": "inside",
-      "refractivity": {
-        "enabled": true,
-        "strength": 0.15,
-        "depth": 0.72
-      },
-      "translucency": {
-        "enabled": true,
-        "value": 0.17
-      },
-      "blur-material": 0,
-      "shadow": {
-        "kind": "neutral",
-        "opacity": 0.08
-      }
-    },
-    {
-      "name": "Return stroke",
-      "layers": [
-        {
-          "name": "Returning ink",
-          "image-name": "return.svg",
-          "glass": true,
-          "opacity": 0.97,
-          "fill-specializations": [
-            {
-              "appearance": "tinted",
-              "value": {
-                "solid": "display-p3:0.93333,0.93333,0.93333,1.00000"
-              }
-            }
-          ]
-        }
-      ],
-      "specular": "outside",
-      "refractivity": {
-        "enabled": true,
-        "depth": 0.5,
-        "strength": 0.48
-      },
-      "translucency": {
-        "enabled": true,
-        "value": 0.12
-      },
-      "blur-material": 0,
-      "shadow": {
-        "kind": "neutral",
-        "opacity": 0.22
-      }
-    },
-    {
-      "name": "Ink stroke and barrel",
-      "layers": [
-        {
-          "name": "Brush",
-          "image-name": "brush.svg",
-          "glass": true,
-          "fill-specializations": [
-            {
-              "appearance": "tinted",
-              "value": {
-                "solid": "display-p3:0.60392,0.60392,0.60392,1.00000"
-              }
-            }
-          ]
-        },
-        {
-          "name": "Ink circle",
-          "image-name": "ink-circle.svg",
-          "glass": true,
-          "fill-specializations": [
-            {
-              "appearance": "tinted",
-              "value": {
-                "solid": "display-p3:0.93333,0.93333,0.93333,1.00000"
-              }
-            }
-          ]
-        }
-      ],
-      "lighting": "individual",
-      "specular": "inside",
-      "refractivity": {
-        "enabled": true,
-        "strength": 0.66,
-        "depth": 0.71
-      },
-      "translucency": {
-        "enabled": true,
-        "value": 0.11
-      },
-      "blur-material": 0,
-      "shadow": {
-        "kind": "neutral",
-        "opacity": 0.3
-      }
-    }
-  ],
-  "supported-platforms": {
-    "squares": [
+  "supported-platforms" : {
+    "squares" : [
       "macOS"
     ]
   }

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="85.5 79 853 853">
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="210 146 604 604">
   <defs>
     <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="400" y1="573" x2="624" y2="568">
       <stop offset="0" stop-color="#e4408c"/>
@@ -7,5 +7,5 @@
       <stop offset="1" stop-color="#ffc579"/>
     </linearGradient>
   </defs>
-  <path d="M400 553 Q510 574 624 552 L624 585 Q512 611 400 586 Z" fill="url(#c)" transform="rotate(24 512 504)"/>
+  <path d="M400 553 Q510 574 624 552 L624 585 Q512 611 400 586 Z" fill="url(#c)"/>
 </svg>
